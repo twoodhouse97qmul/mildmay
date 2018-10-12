@@ -61,6 +61,10 @@
       
     }
     
+    .americano{
+         font-family: 'American Typewriter', serif;
+    }
+    
     .media-links-div{
        
         background-color: #28112B;
@@ -88,7 +92,7 @@
     
     .review-holder{
      
-        width: 100%;
+        width: 40%;
     
         padding:8px;
         color:black;
@@ -108,8 +112,15 @@
     }
     
     .sunday_holder{
-       
+       width: 40%;
+    margin-left:5%;
+        
      
+    }
+    
+    .independent_holder{
+        margin-right:5%;
+        padding-bottom:2px;
     }
     
       .daily_holder{
@@ -119,27 +130,27 @@
     }
     
     .sunday-rev{
-      text-align:center;
-        margin-top:5px;
-        width:300px;
-        float:right;
-         margin-right:25px;
+        text-align:center;
+        padding-top:10px;
+        width:100%;
+        margin:0 auto;
+        
+        
         
     }
     
     .daily-rev{
         float:right;
-        width: 300px;
-        padding-top:20px;
-         margin-right:25px;
+        width: 80%;
+        padding-top:15px;
+         
         text-align:center;
     }
     
     .i-d-rev{
         float:right;
-        width: 300px;
+        width: 80%;
         padding-top:5px;
-         margin-right:25px;
         text-align:center;
         
     }
@@ -149,25 +160,29 @@
     .times-rev{
        
         padding-top:15px;
-        margin-right:25px;
+        width:80%;
         text-align:center;
-        
+        float:Right;
+   
         
     }
     
     .independent-rev{
        text-align:center;
-         width: 300px;
-    margin-top:10px;
-        float:right;
-        margin-right:15px;
+         width: 100%;
+        padding-top:6px;
+        padding-bottom:0;
+        
     }
+    
+    
     
     .observer-rev{
        text-align:center;
-        width: 300px;
-            float:right;
-        margin-right:15px;
+        width: 80%;
+        float:right;
+        margin-top:10px;
+        
     }
     
     
@@ -176,30 +191,31 @@
         width:115px;
         background-image:url("{% static 'photos/sunday_times.png' %}");
         background-size: cover;
-        float:left;
-        margin-left:15px;
+        margin: 0 auto;
+        
        
     }
     
     .observer-link{
-        height:30px;
-        width:30px;
+        height:35px;
+        width:35px;
         background-image:url("{% static 'photos/gaurdian.png' %}");
         background-size: cover;
         float:left;
-         margin-left:15px;
+        margin-top:10px;
+         
          
          
        
     }
     
      .daily-link{
-        height:30px;
-        width:30px;
+        height:45px;
+        width:45px;
         background-image:url("{% static 'photos/daily_mail.png' %}");
         background-size: cover;
         float:left;
-          margin-left:15px;
+      
          
          
        
@@ -211,7 +227,6 @@
         background-image:url("{% static 'photos/ID.png' %}");
         background-size: cover;
         float:left;
-         margin-left:15px;
          
          
        
@@ -225,7 +240,7 @@
         background-image:url("{% static 'photos/times.png' %}");
         background-size: cover;
         float:left;
-           margin-left:15px;
+           
          
          
        
@@ -235,11 +250,11 @@
       
         background-image:url("{% static 'photos/independent.png' %}");
         background-size: cover;
-        margin:0 auto;
+        
         height:30px;
         width:100px;
-        float:left;
-          margin-left:15px;
+        margin:0 auto;
+          
        
          
          
@@ -250,7 +265,7 @@
     .review-div{
 
         width:100%;
-        height:420px;
+   
         border-color:black;
         border:0px;
         border-radius:5px;
@@ -268,16 +283,23 @@
       
     }
     
+    .observer_holder{
+        padding-bottom:8px;
+       
+    }
+    
     .smaller-text{
         font-size:80%;
     }
     
     .right_holder{
         float:right;
+        margin-right:5%;
     }
     
     .left_holder{
         float:left;
+        margin-left:5%;
     }
     
     .clear_floats{
@@ -290,7 +312,11 @@
     }
     
     #slide_1_hold{
-        height:610px;
+        height:500px;
+    }
+    
+    .times-font{
+         font-family: "Times New Roman", Times, serif;
     }
     
     .abcd{
@@ -302,7 +328,7 @@
     }
     
     
-    .review-text-hold{
+    .review-text-hold-na{
          float:right;
         width: 75%;
         text-align:center;
@@ -311,6 +337,10 @@
          float:right;
         width: 65%;
         text-align:center;
+    }
+    
+    .slightly-small{
+        font-size:90%;
     }
     
    
@@ -341,11 +371,145 @@
     
          <div class = "sunday-link rev-link">
               </div>
-    <div class= "sunday-rev review-text-hold-long">
-    <p class = "smaller-text"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine...’ </b></p>
+    <div class= "sunday-rev">
+    <p class = "smaller-text times-font"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine...’ </b></p>
       </div>
 
               </div>
+    
+
+    <div class = "independent_holder review-holder right_holder">
+        
+         <div class = "independent-link rev-link">
+
+              </div>
+    <div class= "independent-rev">
+    <p class = "smaller-text">‘Rarely less than entertaining, and that’s some achievement’
+
+ <p>
+    </div>
+    
+    
+ 
+
+              </div>
+    
+    <div class = "clear_floats"></div>
+
+<div class = "observer_holder review-holder left_holder">
+    
+    
+     <div class = "observer-link rev-link">
+
+              </div>
+    <div class= "observer-rev review-text-hold">
+    <p class = "smaller-text">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons’ 
+ <p>
+    </div>
+    
+ 
+
+              </div>
+   
+    <div class = "daily_holder review-holder right_holder">
+        <div class = "daily-link rev-link">
+
+              </div>
+    <div class= "daily-rev review-text-hold">
+    <p class = "smaller-text">'Mildmay tells a good story ...’
+ <p>
+    </div>
+    
+     
+ 
+
+              </div>
+    
+      <div class = "clear_floats"></div>
+ <div class = "clear_floats"></div>
+<div class = "daily_holder review-holder left_holder">
+      <div class = "i-d-link rev-link">
+
+              </div>
+    <div class= "i-d-rev review-text-hold">
+    <p class = "smaller-text">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’
+
+ <p>
+    </div>
+    
+   
+ 
+
+              </div>
+
+    <div class = "daily_holder review-holder right_holder">
+         
+     <div class = "times-link rev-link">
+
+              </div>
+    <div class= "times-rev review-text-hold">
+    <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism’
+
+ <p>
+    </div>
+   
+ 
+
+              </div>
+
+ 
+
+
+
+    
+    </div>
+
+    
+</div>
+
+
+
+{% endblock %}
+
+{% block slide_ex_block %}
+
+
+<div class = "opac-div" id = "slide_11_hold">
+
+  <div class="slider_titlo">
+            <span class="slider_titlo_text" ><h1>Eroica st John Mildmay
+</h1></span>
+      <div class = "tele-slider-block-hold">
+      
+          </div>
+      
+      <span class="slider_titlo_text" id = "top-texxt"><h1>Lines of Communication
+</h1></span>
+           
+          </div>
+
+
+<div class = "review-div">
+
+<div class = "sunday_holder review-holder left_holder">
+    
+         <div class = "sunday-link rev-link">
+              </div>
+    
+    <div class= "sunday-rev review-text-hold-long">
+    <p class = "smaller-text times-font"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine...’ </b></p>
+      </div>
+
+              </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
      <div class = "clear_floats"></div>
     <div class = "independent_holder review-holder left_holder">
@@ -411,15 +575,17 @@
               </div>
      <div class = "clear_floats"></div>
     <div class = "daily_holder review-holder left_holder">
+        
+         <div class = "times-link rev-link">
+
+              </div>
     <div class= "times-rev review-text-hold">
     <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism’
 
  <p>
     </div>
     
-     <div class = "times-link rev-link">
-
-              </div>
+    
  
 
               </div>
@@ -434,8 +600,6 @@
     
 </div>
 
-
-
 {% endblock %}
 
 {% block slide_2_block %}
@@ -449,7 +613,7 @@
          
      
 
-          <p class="news__txt justy">
+          <p class="news__txt justy slightly-small">
             
         Eroica was born in London and grew up in Africa, specifically Cameroon, Libya and Senegal and has travelled extensively out from those countries to other parts of Africa too. At certain points in her life she has needed to speak Pigeon English, (Cameroon) Arabic and Italian (Libya) and Wolof and French (Senegal) just to make friends! However only French has remained in her system as a regularly used language. Her enthusiasm for travelling and other cultures has taken her to many other world destinations throughout her adult life since then as well. <br><br>
 
@@ -473,16 +637,21 @@ Returning from living in Africa to the UK in her teens, she attended Cheltenham 
            
           </div>
          
-     
+            <h3 class = "americano">columnist</h3>
 
-          <p class="news__txt justy">
+          <p class="news__txt justy slightly-small">
             
-      columnist
+      
 Eroica Mildmay has had column for eighteen months for The Telegraph.co.uk called Notes from a Norfolk Broad, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.<br><br>
+    </p>
+    <h3 class = "americano">features writer / journalist</h3>
+     <p class="news__txt justy slightly-small">
 
-features writer  /& journalist
 Eroica Mildmay was a features writer for North Norfolk Living Magazine for five years covering all sorts of subjects, interviewing, sometimes taking part (as in wild swimming, microlight flying, deep-sea fishing, driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) also photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in North Norfolk and beyond.<br><br>
-novelist
+</p>
+         <h3 class = "americano">novelist</h3> <p class="news__txt justy slightly-small">
+        
+         
 Eroica Mildmay has published two novels. Her first Lucker and Tiffany Peel Out came out to excellent critical reviews in most of the leading broadsheets, tabloid newspapers and magazines here in the UK. Lucker and Tiffany Peel Out was also translated into several different languages for the foreign market and optioned for potential film production. Her second novella Home to Angel Cake was also equally positively reviewed. She has published a selection of short stories, including sci-fi, many of which have also been translated into foreign languages as well. 
 Eroica has just completed a third novel, The Day Gone.
 
@@ -507,15 +676,23 @@ Eroica has just completed a third novel, The Day Gone.
          
      
 
-          <p class="news__txt justy">
+          <p class="news__txt justy slightly-small">
             
 
-Eroica St John Mildmay is a professional writer, experienced in several different genres, having worked as a features writer, journalist in broadcast comedy and as a published novelist and short story writer. She has a fresh, original and imaginative, creative approach to copy, and her manner of delivery and thorough writing style is incisive, crisp, punchy and perceptive. Informative and inventively descriptive all at once, her writing skills and experience lend life and clarity to even the most basic of briefs. <br><br>
+Eroica St John Mildmay is a professional writer, experienced in several different genres, having worked as a features writer, journalist in broadcast comedy and as a published novelist and short story writer. She has a fresh, original and imaginative, creative approach to copy, and her manner of delivery and thorough writing style is incisive, crisp, punchy and perceptive. Informative and inventively descriptive all at once, her writing skills and experience lend life and clarity to even the most basic of briefs. <br><br></p>
+    
+     <h3 class = "americano">What’s wanted?</h3>
+    
+      <p class="news__txt justy slightly-small">
               
-<span>What’s wanted?</span><br><br>
-Bang-up-to-date, cutting-edge copy? Or perhaps a more traditional and classic style of prose is required? Or crisp formality, known formulas, brochures, instruction manuals or perhaps even historical context? Or perhaps comedy (as Eroica is in possession of a sharp wit)? Original thinking, one-off inventiveness, character-speak or gentle humorous asides, all do-able. Or just plain-speaking no-frills, everyday copy? Over to you . . .<br><br>
 
-Can do this!<br><br>
+Bang-up-to-date, cutting-edge copy? Or perhaps a more traditional and classic style of prose is required? Or crisp formality, known formulas, brochures, instruction manuals or perhaps even historical context? Or perhaps comedy (as Eroica is in possession of a sharp wit)? Original thinking, one-off inventiveness, character-speak or gentle humorous asides, all do-able. Or just plain-speaking no-frills, everyday copy? Over to you . . .<br><br>
+    </p>
+    
+    <h3 class = "americano">Can do this!</h3>
+    
+      <p class="news__txt justy slightly-small">
+
 Responsive and communicative – and with communication being the absolute key, Eroica is able to work from even the flimsiest of ideas and enhance and flesh out core ideas into startling and attention-grabbing copy to suit. But, if something more low-key is required that’s fine too. Good observational skills and picking up the idea immediately is essential in this line of work, as are excellent on-board proof-reading skills and attention to the overall presentation. Eroica’s work is always highly-finished and delivered in a timely fashion, as required. The challenge is the fun part and the satisfaction comes in doing an outstanding job to a very high standard.
 
               
