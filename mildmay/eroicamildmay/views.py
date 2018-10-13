@@ -18,7 +18,7 @@ def tele(request):
     context = {
 
     }
-    return render(request, 'opening/telep.html', context)
+    return render(request, 'opening/tele-feature.html', context)
 
 def falling(request):
     context = {

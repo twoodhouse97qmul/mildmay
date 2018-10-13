@@ -74,10 +74,28 @@
        
         position:relative;
         background-color: #d2dfcc;
-        height:100px;
-        width:110%;
+        height:200px;
+        width:50%;
         overflow: hidden;
-        margin-left:-30px;
+        margin-left:25%;
+        border-radius:8px;
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+        
+    }
+    
+    
+    .eroica-photo{
+       
+        
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+         border-radius:8px;
+        background-image:url("{% static 'photos/eroica.jpg' %}");
+        background-size: cover;
+        
+         margin-top:20px;
+        float:left;
+        width:40%;
+        height:450px;
         
     }
     
@@ -167,6 +185,16 @@
         
     }
     
+    .tls-rev{
+       
+        padding-top:10px;
+        width:80%;
+        text-align:center;
+        float:Right;
+   
+        
+    }
+    
     .independent-rev{
        text-align:center;
          width: 100%;
@@ -182,6 +210,9 @@
         width: 80%;
         float:right;
         margin-top:10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+        
         
     }
     
@@ -197,24 +228,31 @@
     }
     
     .observer-link{
-        height:35px;
-        width:35px;
+         height:50px;
+        width:20%;
         background-image:url("{% static 'photos/gaurdian.png' %}");
-        background-size: cover;
+           background-size:contain;
         float:left;
-        margin-top:10px;
+        background-repeat: no-repeat;
          
          
          
        
     }
     
+    .centered-butt{
+        margin:0 auto;
+  
+        width:205px;
+    }
+    
      .daily-link{
-        height:45px;
-        width:45px;
+        height:50px;
+        width:20%;
         background-image:url("{% static 'photos/daily_mail.png' %}");
-        background-size: cover;
+        background-size:contain;
         float:left;
+        background-repeat: no-repeat;
       
          
          
@@ -222,11 +260,27 @@
     }
     
     .i-d-link{
-        height:20px;
-        width:32px;
+        height:30px;
+        width:20%;
+        margin-top:5px;
         background-image:url("{% static 'photos/ID.png' %}");
-        background-size: cover;
+        background-size:contain;
         float:left;
+        background-repeat: no-repeat;
+         
+         
+       
+    }
+    
+    .tls-link{
+        height:50px;
+        width:20%;
+        background-image:url("{% static 'photos/times.png' %}");
+        background-size:contain;
+        float:left;
+        background-repeat: no-repeat;
+         
+           
          
          
        
@@ -246,11 +300,13 @@
        
     }
     
+    
+    
+    
      .independent-link{
       
         background-image:url("{% static 'photos/independent.png' %}");
         background-size: cover;
-        
         height:30px;
         width:100px;
         margin:0 auto;
@@ -259,6 +315,10 @@
          
          
        
+    }
+    
+    .cleario{
+        clear:both;
     }
     
     
@@ -343,6 +403,13 @@
         font-size:90%;
     }
     
+    
+    .custom_news{
+        
+        width:50%;
+        float:right;
+    }
+    
    
    
     
@@ -355,8 +422,8 @@
             <span class="slider_titlo_text" ><h1>Eroica st John Mildmay
 </h1></span>
       <div class = "tele-slider-block-hold">
-      {% block tele-sliderr %}
-      {% endblock %}
+        {% block tele-test %}
+        {% endblock %}
           </div>
       
       <span class="slider_titlo_text" id = "top-texxt"><h1>Lines of Communication
@@ -384,7 +451,7 @@
 
               </div>
     <div class= "independent-rev">
-    <p class = "smaller-text">‘Rarely less than entertaining, and that’s some achievement’
+        <p class = "smaller-text"><b>‘Rarely less than entertaining, and that’s some achievement’</b>
 
  <p>
     </div>
@@ -403,7 +470,7 @@
 
               </div>
     <div class= "observer-rev review-text-hold">
-    <p class = "smaller-text">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons’ 
+    <p class = "smaller-text"><b>‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons’ </b>
  <p>
     </div>
     
@@ -416,7 +483,7 @@
 
               </div>
     <div class= "daily-rev review-text-hold">
-    <p class = "smaller-text">'Mildmay tells a good story ...’
+    <p class = "smaller-text"><b>'Mildmay tells a good story ...’</b>
  <p>
     </div>
     
@@ -432,7 +499,7 @@
 
               </div>
     <div class= "i-d-rev review-text-hold">
-    <p class = "smaller-text">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’
+        <p class = "smaller-text"><b>‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’</b>
 
  <p>
     </div>
@@ -444,11 +511,11 @@
 
     <div class = "daily_holder review-holder right_holder">
          
-     <div class = "times-link rev-link">
+     <div class = "tls-link rev-link">
 
               </div>
-    <div class= "times-rev review-text-hold">
-    <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism’
+    <div class= "tls-rev review-text-hold">
+    <p class = "smaller-text"><b>‘Her flights of fancy description transform cynicism into lyricism’</b>
 
  <p>
     </div>
@@ -518,7 +585,7 @@
 
               </div>
     <div class= "independent-rev review-text-hold">
-    <p class = "smaller-text">‘Rarely less than entertaining, and that’s some achievement’
+        <p class = "smaller-text"><b>‘Rarely less than entertaining, and that’s some achievement’</b>
 
  <p>
     </div>
@@ -610,18 +677,22 @@
             <span class="slider_titlo_text"><h1>About</h1></span>
            
           </div>
-         
+          <div class = "eroica-photo">
+    
+    </div>
      
 
-          <p class="news__txt justy slightly-small">
+          <p class="news__txt justy slightly-small custom_news">
             
         Eroica was born in London and grew up in Africa, specifically Cameroon, Libya and Senegal and has travelled extensively out from those countries to other parts of Africa too. At certain points in her life she has needed to speak Pigeon English, (Cameroon) Arabic and Italian (Libya) and Wolof and French (Senegal) just to make friends! However only French has remained in her system as a regularly used language. Her enthusiasm for travelling and other cultures has taken her to many other world destinations throughout her adult life since then as well. <br><br>
-
-Returning from living in Africa to the UK in her teens, she attended Cheltenham Art College, specializing in sculpture. She then became a model after being spotted in the street in Berkley Square, going on to work in London, Paris, Milan, Hamburg and Munich on the catwalk and on press photoshoots. She has lived full-time in both Milan and Paris during this period. She then had her own fashion styling business based in London with an extensive client base, also both at home and abroad. She moved over to writing after that, attending the University of East Anglia as a mature student, completing a BA Hons Degree in Creative Writing and English Literature to improve her craft. 
               
-         
-
-          </p>
+              Returning from living in Africa to the UK in her teens, she attended Cheltenham Art College, specializing in sculpture. She then became a model after being spotted in the street in Berkley Square, going on to work in London, Paris, Milan, Hamburg and Munich on the catwalk and on press photoshoots. She has lived full-time in both Milan and Paris during this period. She then had her own fashion styling business based in London with an extensive client base, also both at home and abroad. She moved over to writing after that, attending the University of East Anglia as a mature student, completing a BA Hons Degree in Creative Writing and English Literature to improve her craft. 
+              
+                 </p>
+    
+   <div class = "cleario"></div>
+    
+    
 
          
 
@@ -641,7 +712,6 @@ Returning from living in Africa to the UK in her teens, she attended Cheltenham 
 
           <p class="news__txt justy slightly-small">
             
-      
 Eroica Mildmay has had column for eighteen months for The Telegraph.co.uk called Notes from a Norfolk Broad, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.<br><br>
     </p>
     <h3 class = "americano">features writer / journalist</h3>
@@ -681,22 +751,19 @@ Eroica has just completed a third novel, The Day Gone.
 
 Eroica St John Mildmay is a professional writer, experienced in several different genres, having worked as a features writer, journalist in broadcast comedy and as a published novelist and short story writer. She has a fresh, original and imaginative, creative approach to copy, and her manner of delivery and thorough writing style is incisive, crisp, punchy and perceptive. Informative and inventively descriptive all at once, her writing skills and experience lend life and clarity to even the most basic of briefs. <br><br></p>
     
-     <h3 class = "americano">What’s wanted?</h3>
+     <h3 class = "americano">what’s wanted?</h3>
     
       <p class="news__txt justy slightly-small">
               
 
-Bang-up-to-date, cutting-edge copy? Or perhaps a more traditional and classic style of prose is required? Or crisp formality, known formulas, brochures, instruction manuals or perhaps even historical context? Or perhaps comedy (as Eroica is in possession of a sharp wit)? Original thinking, one-off inventiveness, character-speak or gentle humorous asides, all do-able. Or just plain-speaking no-frills, everyday copy? Over to you . . .<br><br>
+Bang-up-to-date, cutting-edge copy? Or perhaps a more traditional and classic style of prose is required? Or crisp formality, known formulas, brochures, instruction manuals or perhaps even historical context? Or perhaps comedy (as Eroica is in possession of a sharp wit)? Original thinking, one-off inventiveness, character-speak or gentle humorous asides, all do-able. Or just plain-speaking no-frills, everyday copy? Over to you ... <br><br>
     </p>
     
-    <h3 class = "americano">Can do this!</h3>
+    <h3 class = "americano">can do this!</h3>
     
       <p class="news__txt justy slightly-small">
 
 Responsive and communicative – and with communication being the absolute key, Eroica is able to work from even the flimsiest of ideas and enhance and flesh out core ideas into startling and attention-grabbing copy to suit. But, if something more low-key is required that’s fine too. Good observational skills and picking up the idea immediately is essential in this line of work, as are excellent on-board proof-reading skills and attention to the overall presentation. Eroica’s work is always highly-finished and delivered in a timely fashion, as required. The challenge is the fun part and the satisfaction comes in doing an outstanding job to a very high standard.
-
-              
-         
 
           </p>
 
@@ -726,8 +793,9 @@ Responsive and communicative – and with communication being the absolute key, 
 </p>
 
 
-   
+   <div class = "centered-butt">
     <button class = "btn btn-primary con-butty">Use The Quick Contact Tool</button>
+       </div>
       
  
     
