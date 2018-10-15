@@ -1,0 +1,55 @@
+{% extends 'opening/prog-input.html' %}
+
+{% block tele-skirting %}
+
+ {% load static %}
+
+<style>
+    
+  
+
+
+.sliding-background {
+  background: url("{% static 'photos/tele.png' %}") repeat-x;
+ background-size: contain;
+  height: 150px;
+  width: 5076px;
+  animation: slide2 40s linear infinite;
+}
+
+@keyframes slide2{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+    
+ .containered {
+    overflow: hidden;
+    position:absolute;
+    width:100%;
+    bottom:0;
+ 
+}
+</style>
+
+
+
+<div class="containered">
+  <div class="sliding-background"></div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+

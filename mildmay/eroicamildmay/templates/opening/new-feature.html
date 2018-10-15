@@ -1,0 +1,73 @@
+{% extends 'opening/new-skirt.html' %}
+
+{% block new-feature %}
+
+ {% load static %}
+
+<style>
+    
+   .containerefeat {
+    overflow: hidden;
+    
+
+     width:100%;
+    height:100%;
+       background-color: grey;
+ 
+}
+
+
+.sliding-backgroundfeat {
+  background: url("{% static 'photos/tele-feature.png' %}") repeat-x;
+  background-size: contain;
+  height: 130%;
+  width: 130%;
+  animation: slide 15s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+    
+10%{
+ 
+    transform: translate3d(-3%, -5%, 0);
+   
+  }
+    
+    30%{
+ 
+    transform: translate3d(-20%, -18%, 0);
+   
+  }
+ 
+  100%{
+   
+    width:180%;
+    height:200%;
+    transform: translate3d(-60%, -15%, 0);
+    
+  }
+}
+</style>
+
+
+
+<div class="containerefeat">
+  <div class="sliding-backgroundfeat"></div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+

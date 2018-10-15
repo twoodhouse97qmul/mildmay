@@ -75,10 +75,10 @@
         position:relative;
         background-color: #d2dfcc;
         height:200px;
-        width:50%;
+        width:40%;
         overflow: hidden;
-        margin-left:25%;
-        border-radius:8px;
+        margin-left:30%;
+        border-radius:15px;
         box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
         
     }
@@ -139,19 +139,36 @@
     .independent_holder{
         margin-right:5%;
         padding-bottom:2px;
+        margin-bottom:0;
+       
     }
     
       .daily_holder{
-       
+      
+       margin-top:0;
+   
+     
+    }
+    
+     .tls_holder{
+      
+       margin-top:-5px;
+   
+     
+    }
+    
+    .daily_holder2{
+      
+       margin-top:-15px;
    
      
     }
     
     .sunday-rev{
         text-align:center;
-        padding-top:10px;
-        width:100%;
-        margin:0 auto;
+        padding-top:0px;
+        width:75%;
+        float:right;
         
         
         
@@ -197,7 +214,8 @@
     
     .independent-rev{
        text-align:center;
-         width: 100%;
+        float:right;
+         width: 75%;
         padding-top:6px;
         padding-bottom:0;
         
@@ -218,11 +236,12 @@
     
     
     .sunday-link{
-        height:22px;
-        width:115px;
+        height:45px;
+        width:20%;
         background-image:url("{% static 'photos/sunday_times.png' %}");
-        background-size: cover;
-        margin: 0 auto;
+        background-size: contain;
+        float:left;
+         background-repeat: no-repeat;
         
        
     }
@@ -247,12 +266,14 @@
     }
     
      .daily-link{
-        height:50px;
+        height:60px;
         width:20%;
         background-image:url("{% static 'photos/daily_mail.png' %}");
         background-size:contain;
         float:left;
         background-repeat: no-repeat;
+        
+        
       
          
          
@@ -288,28 +309,16 @@
     
     
     
-      .times-link{
-        height:30px;
-        width:30px;
-        background-image:url("{% static 'photos/times.png' %}");
-        background-size: cover;
-        float:left;
-           
-         
-         
-       
-    }
-    
-    
+      
     
     
      .independent-link{
-      
+        height:50px;
+        width:20%;
         background-image:url("{% static 'photos/independent.png' %}");
-        background-size: cover;
-        height:30px;
-        width:100px;
-        margin:0 auto;
+        background-size:contain;
+        float:left;
+        background-repeat: no-repeat;
           
        
          
@@ -355,6 +364,10 @@
     .right_holder{
         float:right;
         margin-right:5%;
+    }
+    
+    .ital{
+        font-style: italic;
     }
     
     .left_holder{
@@ -410,6 +423,40 @@
         float:right;
     }
     
+    .press-title-holder{
+        width:100%;
+    }
+    .line-right{
+        color:black;
+        float:right;
+         width:30%;
+        margin-right:5%;
+        margin-top:10px;
+         border-style:solid;
+         border-bottom:2px;
+    }
+    
+    .line-left{
+         color:black;
+   
+        float:left;
+        width:30%;
+        margin-left:5%;
+        margin-top:10px;
+        border-style:solid;
+        border-bottom:2px;
+    }
+    
+    .press-text{
+     margin:0 auto;
+    width:100%;
+   text-align: center;
+    }
+    
+    
+    
+    
+    
    
    
     
@@ -419,17 +466,26 @@
 <div class = "opac-div" id = "slide_1_hold">
 
   <div class="slider_titlo">
-            <span class="slider_titlo_text" ><h1>Eroica st John Mildmay
+            <span class="slider_titlo_text" ><h1>Eroica Mildmay
 </h1></span>
       <div class = "tele-slider-block-hold">
-        {% block tele-test %}
+        {% block new-feature %}
         {% endblock %}
           </div>
       
-      <span class="slider_titlo_text" id = "top-texxt"><h1>Lines of Communication
+      <span class="slider_titlo_text" id = "top-texxt"><h1>lines of communication
 </h1></span>
            
           </div>
+    
+    <div class = "press-title-holder">
+      
+            </div>
+        <div class = "press-text">
+    <h3>press reviews</h3>
+            </div>
+         <div class = "clear_floats"></div>
+   
 
 
 <div class = "review-div">
@@ -439,7 +495,7 @@
          <div class = "sunday-link rev-link">
               </div>
     <div class= "sunday-rev">
-    <p class = "smaller-text times-font"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine...’ </b></p>
+    <p class = "smaller-text times-font"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine . . .’ </b></p>
       </div>
 
               </div>
@@ -451,14 +507,12 @@
 
               </div>
     <div class= "independent-rev">
-        <p class = "smaller-text"><b>‘Rarely less than entertaining, and that’s some achievement’</b>
+        <p class = "smaller-text"><b>‘Rarely less than entertaining, and that’s some achievement ...’</b>
 
  <p>
     </div>
     
     
- 
-
               </div>
     
     <div class = "clear_floats"></div>
@@ -470,7 +524,7 @@
 
               </div>
     <div class= "observer-rev review-text-hold">
-    <p class = "smaller-text"><b>‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons’ </b>
+    <p class = "smaller-text"><b>‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’ </b>
  <p>
     </div>
     
@@ -478,7 +532,7 @@
 
               </div>
    
-    <div class = "daily_holder review-holder right_holder">
+    <div class = "daily_holder2 review-holder right_holder">
         <div class = "daily-link rev-link">
 
               </div>
@@ -509,13 +563,13 @@
 
               </div>
 
-    <div class = "daily_holder review-holder right_holder">
+    <div class = "tls_holder review-holder right_holder">
          
      <div class = "tls-link rev-link">
 
               </div>
     <div class= "tls-rev review-text-hold">
-    <p class = "smaller-text"><b>‘Her flights of fancy description transform cynicism into lyricism’</b>
+    <p class = "smaller-text"><b>‘Her flights of fancy description transform cynicism into lyricism . . .’</b>
 
  <p>
     </div>
@@ -538,143 +592,14 @@
 
 {% endblock %}
 
-{% block slide_ex_block %}
 
-
-<div class = "opac-div" id = "slide_11_hold">
-
-  <div class="slider_titlo">
-            <span class="slider_titlo_text" ><h1>Eroica st John Mildmay
-</h1></span>
-      <div class = "tele-slider-block-hold">
-      
-          </div>
-      
-      <span class="slider_titlo_text" id = "top-texxt"><h1>Lines of Communication
-</h1></span>
-           
-          </div>
-
-
-<div class = "review-div">
-
-<div class = "sunday_holder review-holder left_holder">
-    
-         <div class = "sunday-link rev-link">
-              </div>
-    
-    <div class= "sunday-rev review-text-hold-long">
-    <p class = "smaller-text times-font"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine...’ </b></p>
-      </div>
-
-              </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     <div class = "clear_floats"></div>
-    <div class = "independent_holder review-holder left_holder">
-        
-         <div class = "independent-link rev-link">
-
-              </div>
-    <div class= "independent-rev review-text-hold">
-        <p class = "smaller-text"><b>‘Rarely less than entertaining, and that’s some achievement’</b>
-
- <p>
-    </div>
-    
-    
- 
-
-              </div>
-    
-    <div class = "clear_floats"></div>
-
-<div class = "observer_holder review-holder left_holder">
-    
-    
-     <div class = "observer-link rev-link">
-
-              </div>
-    <div class= "observer-rev review-text-hold">
-    <p class = "smaller-text">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons’ 
- <p>
-    </div>
-    
- 
-
-              </div>
-     <div class = "clear_floats"></div>
-    <div class = "daily_holder review-holder left_holder">
-    <div class= "daily-rev review-text-hold">
-    <p class = "smaller-text">'Mildmay tells a good story ...’
- <p>
-    </div>
-    
-     <div class = "daily-link rev-link">
-
-              </div>
- 
-
-              </div>
-    
-      <div class = "clear_floats"></div>
- <div class = "clear_floats"></div>
-<div class = "daily_holder review-holder left_holder">
-    <div class= "i-d-rev review-text-hold">
-    <p class = "smaller-text">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’
-
- <p>
-    </div>
-    
-     <div class = "i-d-link rev-link">
-
-              </div>
- 
-
-              </div>
-     <div class = "clear_floats"></div>
-    <div class = "daily_holder review-holder left_holder">
-        
-         <div class = "times-link rev-link">
-
-              </div>
-    <div class= "times-rev review-text-hold">
-    <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism’
-
- <p>
-    </div>
-    
-    
- 
-
-              </div>
-
- 
-
-
-
-    
-    </div>
-
-    
-</div>
-
-{% endblock %}
 
 {% block slide_2_block %}
 <div class = "opac-div" id = "slide_2_hold">
 
 
       <div class="slider_titlo">
-            <span class="slider_titlo_text"><h1>About</h1></span>
+            <span class="slider_titlo_text"><h1>about</h1></span>
            
           </div>
           <div class = "eroica-photo">
@@ -704,7 +629,7 @@
 
 
       <div class="slider_titlo">
-            <span class="slider_titlo_text"><h1>Background</h1></span>
+            <span class="slider_titlo_text"><h1>background</h1></span>
            
           </div>
          
@@ -712,12 +637,12 @@
 
           <p class="news__txt justy slightly-small">
             
-Eroica Mildmay has had column for eighteen months for The Telegraph.co.uk called Notes from a Norfolk Broad, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.<br><br>
+Eroica Mildmay has had column for eighteen months for <b>The Telegraph.co.uk</b> called <b class = "ital">Notes from a Norfolk Broad</b>, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.<br><br>
     </p>
     <h3 class = "americano">features writer / journalist</h3>
      <p class="news__txt justy slightly-small">
 
-Eroica Mildmay was a features writer for North Norfolk Living Magazine for five years covering all sorts of subjects, interviewing, sometimes taking part (as in wild swimming, microlight flying, deep-sea fishing, driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) also photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in North Norfolk and beyond.<br><br>
+Eroica Mildmay was a features writer for <b>North Norfolk Living Magazine</b> for five years covering all sorts of subjects, interviewing, sometimes taking part (as in wild swimming, microlight flying, deep-sea fishing, driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) also photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in North Norfolk and beyond.<br><br>
 </p>
          <h3 class = "americano">novelist</h3> <p class="news__txt justy slightly-small">
         
@@ -740,7 +665,7 @@ Eroica has just completed a third novel, The Day Gone.
 
 
       <div class="slider_titlo">
-            <span class="slider_titlo_text"><h1>Freelance Copywriter</h1></span>
+            <span class="slider_titlo_text"><h1>freelance copywriter</h1></span>
            
           </div>
          
@@ -778,7 +703,7 @@ Responsive and communicative – and with communication being the absolute key, 
 {% block slide_5_block %}
 
 <div class="slider_titlo">
-            <span class="slider_titlo_text"><h1>Contact</h1></span>
+            <span class="slider_titlo_text"><h1>contact</h1></span>
            
           </div>
 
@@ -787,7 +712,7 @@ Responsive and communicative – and with communication being the absolute key, 
 
 <p class="news__txt abcd"> Feel free to contact me!<br><br>
     
-    <i class="fas fa-envelope"></i> eroica@eroicamildmay.com <br>
+    <i class="fas fa-envelope"></i> eroica@eroicamildmay.co.uk <br>
     <i class="fas fa-mobile"></i> 07876 404454 <br> <br>
     Alternatively, contact me using the tool below:
 </p>

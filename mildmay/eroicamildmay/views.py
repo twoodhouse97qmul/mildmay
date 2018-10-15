@@ -36,7 +36,7 @@ def twhome(request):
     context = {
 
     }
-    return render(request, 'opening/tele-feature.html', context)
+    return render(request, 'opening/new-feature.html', context)
 
 def twPast(request):
     context = {
