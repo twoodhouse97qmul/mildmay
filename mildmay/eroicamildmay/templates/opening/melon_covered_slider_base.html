@@ -9,7 +9,7 @@
 
  {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/eroicaSliderc.css' %}">
+    <link rel="stylesheet" href="{% static 'css/eroicaSlider.css' %}">
 
 <style>
     
@@ -199,6 +199,29 @@
 
         </div>
       </div>
+        
+          
+        <div class="news-slider__item swiper-slide first_slidy">
+        <div class="news__item no_underline" >
+          {% block v1 %}
+{% endblock %}
+
+        </div>
+      </div>
+        
+        
+        
+        
+        
+        <div class="news-slider__item swiper-slide first_slidy">
+        <div class="news__item no_underline" >
+          {% block version_two %}
+{% endblock %}
+
+        </div>
+      </div>
+        
+       
         
         
     

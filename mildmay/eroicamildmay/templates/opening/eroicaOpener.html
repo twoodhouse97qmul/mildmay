@@ -91,6 +91,20 @@
         
     }
     
+     .tele-slider-block-holdv1{
+       
+        position:relative;
+        background-color: #d2dfcc;
+        height:299px;  
+        width:502px;   
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius:15px;
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+        border-radius:15px;
+        
+    }
+    
     
     .eroica-photo{
        
@@ -104,6 +118,7 @@
         float:left;
         width:40%;
         height:450px;
+        
         
     }
     
@@ -134,12 +149,30 @@
         
     }
     
+    .review-holderv1{
+     
+        width: 80%;
+    
+        padding:8px;
+        color:black;
+        
+        border:0;
+        border-style:solid;
+        border-width:2px;
+        border-bottom:0;
+        border-left:0;
+        border-right:0;
+        
+
+        
+    }
+    
     #top-texxt{
      
     }
     
     .sunday_holder{
-       width: 40%;
+    
     margin-left:5%;
         
      
@@ -277,11 +310,14 @@
     }
     
      .daily-link{
-        height:60px;
-        width:20%;
+        height:80px;
+        width:80px;
         background-image:url("{% static 'photos/daily_mail.png' %}");
         background-size:contain;
-        float:left;
+        position:absolute;
+         margin-left: -15px;
+         margin-top:-10px;
+    
         background-repeat: no-repeat;
         
         
@@ -484,6 +520,21 @@
         text-align: center;
     }
     
+    .v2-left{
+        width:50%;
+        float:left;
+    }
+    
+     .v2-right{
+        width:50%;
+         float:right;
+    }
+    
+    .tele-blck{
+        margin-top:50px;
+    }
+    
+    
     
     
     
@@ -493,6 +544,319 @@
     
 </style>
 
+
+<div class = "opac-div" id = "slide_1_hold">
+    
+    <div class = "v2-left">
+        
+          <div class="slider_titlob">
+            <span class="slider_titlo_text" ><h1>Eroica Mildmay
+</h1><h6>freelance copywriter</h6></span>
+      
+      
+      
+      
+      <div class = "tele-blckv1">
+      <div class = "tele-slider-block-holdv1">
+        {% block new-feature %}
+        {% endblock %}
+          
+          </div>
+          <span class="slider_titlo_text" id = "top-texxt"><h5>lines of communication
+              </h5></span>
+          </div>
+      
+      
+      
+            <div class = "clear_floats"></div>
+          </div>
+    
+    </div>
+    
+    
+     <div class = "v2-right">
+         
+           <div class = "press-title-holder">
+      
+            </div>
+        <div class = "press-text">
+    <h1 class = "slider_titlo_text americano">press reviews</h1>
+            </div>
+         
+    
+         <div class = "review-div">
+
+<div class = "sunday_holder review-holderv1 right_holder">
+    
+         <div class = "sunday-link rev-link">
+              </div>
+    <div class= "sunday-rev">
+    <p class = "smaller-text">A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine . . .’<b> The Sunday Times</b></p>
+      </div>
+
+              </div>
+             
+              <div class = "clear_floats"></div>
+    
+
+    <div class = "independent_holder review-holderv1 right_holder">
+        
+         <div class = "independent-link rev-link">
+
+              </div>
+    <div class= "independent-rev">
+        <p class = "smaller-text">‘Rarely less than entertaining, and that’s some achievement ...’ <b>The Independent</b>
+
+ <p>
+    </div>
+    
+    
+              </div>
+    
+    <div class = "clear_floats"></div>
+
+<div class = "observer_holder review-holderv1 right_holder">
+    
+    
+     <div class = "observer-link rev-link">
+
+              </div>
+    <div class= "observer-rev review-text-hold">
+    <p class = "smaller-text">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’<b> The Observer</b>
+ <p>
+    </div>
+    
+ 
+
+              </div>
+   
+    <div class = "daily_holder2 review-holderv1 right_holder">
+        <div class = "daily-link rev-link">
+
+              </div>
+    <div class= "daily-rev review-text-hold">
+    <p>'Mildmay tells a good story ...’ <b>The Daily Mail</b>
+ <p>
+    </div>
+    
+     
+ 
+
+              </div>
+    
+      <div class = "clear_floats"></div>
+ <div class = "clear_floats"></div>
+<div class = "daily_holder review-holderv1 right_holder">
+      <div class = "i-d-link rev-link">
+
+              </div>
+    <div class= "i-d-rev review-text-hold">
+        <p class = "smaller-text">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’<b> ID Magazine</b>
+
+ <p>
+    </div>
+    
+   
+ 
+
+              </div>
+
+    <div class = "tls_holder review-holderv1 right_holder">
+         
+     <div class = "tls-link rev-link">
+
+              </div>
+    <div class= "tls-rev review-text-hold">
+    <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism . . .’ <b>Times Literature Review</b>
+
+ <p>
+    </div>
+   
+ 
+
+              </div>
+
+ 
+
+
+
+    
+    </div>
+         
+    </div>
+
+
+    
+  
+   
+
+
+
+
+    
+</div>
+
+
+
+{% endblock %}
+
+{% block v1 %}
+
+
+<div class = "opac-div" id = "slide_1_hold">
+    
+    <div class = "v2-left">
+        
+          <div class="slider_titlob">
+            <span class="slider_titlo_text" ><h1>Eroica Mildmay
+</h1><h6>freelance copywriter</h6></span>
+      
+      
+      
+      
+      <div class = "tele-blck">
+      <div class = "tele-slider-block-hold">
+        {% block new-featurd %}
+        {% endblock %}
+          
+          </div>
+          <span class="slider_titlo_text" id = "top-texxt"><h5>lines of communication
+              </h5></span>
+          </div>
+      
+      
+      
+            <div class = "clear_floats"></div>
+          </div>
+    
+    </div>
+    
+    
+     <div class = "v2-right">
+         
+           <div class = "press-title-holder">
+      
+            </div>
+        <div class = "press-text">
+    <h1 class = "slider_titlo_text americano">press reviews</h1>
+            </div>
+         
+    
+         <div class = "review-div">
+
+<div class = "sunday_holder review-holder left_holder">
+    
+         <div class = "sunday-link rev-link">
+              </div>
+    <div class= "sunday-rev">
+    <p class = "smaller-text times-font"><b>A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine . . .’ The Sunday Times</b></p>
+      </div>
+
+              </div>
+    
+
+    <div class = "independent_holder review-holder right_holder">
+        
+         <div class = "independent-link rev-link">
+
+              </div>
+    <div class= "independent-rev">
+        <p class = "smaller-text"><b>‘Rarely less than entertaining, and that’s some achievement ...’ The Independent</b>
+
+ <p>
+    </div>
+    
+    
+              </div>
+    
+    <div class = "clear_floats"></div>
+
+<div class = "observer_holder review-holder left_holder">
+    
+    
+     <div class = "observer-link rev-link">
+
+              </div>
+    <div class= "observer-rev review-text-hold">
+    <p class = "smaller-text"><b>‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’ The Observer</b>
+ <p>
+    </div>
+    
+ 
+
+              </div>
+   
+    <div class = "daily_holder2 review-holder right_holder">
+        <div class = "daily-link rev-link">
+
+              </div>
+    <div class= "daily-rev review-text-hold">
+    <p><b>'Mildmay tells a good story ...’ The Daily Mail</b>
+ <p>
+    </div>
+    
+     
+ 
+
+              </div>
+    
+      <div class = "clear_floats"></div>
+ <div class = "clear_floats"></div>
+<div class = "daily_holder review-holder left_holder">
+      <div class = "i-d-link rev-link">
+
+              </div>
+    <div class= "i-d-rev review-text-hold">
+        <p class = "smaller-text"><b>‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’ ID Magazine</b>
+
+ <p>
+    </div>
+    
+   
+ 
+
+              </div>
+
+    <div class = "tls_holder review-holder right_holder">
+         
+     <div class = "tls-link rev-link">
+
+              </div>
+    <div class= "tls-rev review-text-hold">
+    <p class = "smaller-text"><b>‘Her flights of fancy description transform cynicism into lyricism . . .’ Times Literature Review</b>
+
+ <p>
+    </div>
+   
+ 
+
+              </div>
+
+ 
+
+
+
+    
+    </div>
+         
+    </div>
+
+
+    
+  
+   
+
+
+
+
+    
+</div>
+
+
+
+{% endblock %}
+
+{% block version_two %}
 
 <div class = "opac-div" id = "slide_1_hold">
 
@@ -628,8 +992,6 @@
     
 </div>
 
-
-
 {% endblock %}
 
 
@@ -647,7 +1009,7 @@
             <span class="slider_titlo_text" ><h1>Eroica Mildmay
 </h1></span>
       <div class = "tele-slider-block-hold">
-        {% block new-feature %}
+        {% block new-featuref %}
         {% endblock %}
           </div>
       
