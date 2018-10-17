@@ -148,7 +148,7 @@ a, a:hover {
 }
 .news-slider__pagination {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .news-slider__pagination .swiper-pagination-bullet {
   width: 13px;
@@ -174,7 +174,7 @@ a, a:hover {
 }
 .news__item {
   padding: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   color: #0A0A0A;
   border-radius: 10px;
   display: block;
