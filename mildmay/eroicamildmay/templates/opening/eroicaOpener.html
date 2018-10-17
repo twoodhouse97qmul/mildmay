@@ -144,6 +144,9 @@
         border-bottom:0;
         border-left:0;
         border-right:0;
+        padding-bottom:0;
+        margin-bottom:0;
+        margin-top:0;
         
 
         
@@ -152,16 +155,16 @@
     .review-holderv1{
      
         width: 80%;
-    
         padding:8px;
         color:black;
-        
         border:0;
         border-style:solid;
         border-width:2px;
         border-bottom:0;
         border-left:0;
         border-right:0;
+        padding-bottom:0;
+        margin:0;
         
 
         
@@ -174,6 +177,8 @@
     .sunday_holder{
     
     margin-left:5%;
+    
+    margin-bottom:0;
         
      
     }
@@ -201,10 +206,18 @@
     
     .daily_holder2{
       
-       margin-top:-12px;
+       margin-top:0px;
    
      
     }
+    
+    .single-line-rev-a{
+        height:60px;
+        background-color: blue;
+    }
+    
+    
+     
     
     .sunday-rev{
         text-align:center;
@@ -314,11 +327,12 @@
         width:80px;
         background-image:url("{% static 'photos/daily_mail.png' %}");
         background-size:contain;
-        position:absolute;
-         margin-left: -15px;
-         margin-top:-10px;
-    
+        position:relative;
+         
         background-repeat: no-repeat;
+         float:left;
+         margin-left: -15px;
+         margin-top:-16px;
         
         
       
@@ -375,6 +389,9 @@
     
     .cleario{
         clear:both;
+        background-color: blue;
+        margin:0;
+        padding:0;
     }
     
     
@@ -401,7 +418,8 @@
     
     .observer_holder{
         padding-bottom:8px;
-       
+        margin-top:0;
+      
     }
     
     .smaller-text{
@@ -543,7 +561,14 @@
     }
     
     .pub-sign{
-        text-align: right;
+        margin-bottom:0;
+        padding-bottom:0;
+       
+    }
+    
+    .review-holder-a{
+        height:65px;
+        background-color: blue;
     }
     
     @media only screen and (max-width: 760px) {
@@ -1028,7 +1053,7 @@
             <span class="slider_titlo_text" ><h1>eroica mildmay
 </h1></span>
       <div class = "tele-slider-block-hold">
-        {% block new-featuref %}
+        {% block new-featureq %}
         {% endblock %}
           </div>
       
@@ -1049,91 +1074,8 @@
 
 <div class = "review-div">
 
-<div class = "sunday_holder review-holder left_holder">
-    
-         <div class = "sunday-link rev-link">
-              </div>
-    <div class= "sunday-rev">
-    <p class = "smaller-text ">A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine . . .’</p><p class = "smaller-text pub-sign"><b>The Sunday Times</b></p> 
-      </div>
-
-              </div>
-    
-
-    <div class = "independent_holder review-holder right_holder">
-        
-         <div class = "independent-link rev-link">
-
-              </div>
-    <div class= "independent-rev">
-        <p class = "smaller-text ">‘Rarely less than entertaining, and that’s some achievement ...’ </p><p class = "smaller-text pub-sign"><b>The Independent</b></p>  
-    </div>
-    
-    
-              </div>
-    
-    <div class = "clear_floats"></div>
-
-<div class = "observer_holder review-holder left_holder">
-    
-    
-     <div class = "observer-link rev-link">
-
-              </div>
-    <div class= "observer-rev review-text-hold">
-    <p class = "smaller-text">‘eroica mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’ </p><p class = "smaller-text pub-sign"><b>The Observer</b></p>  
-    </div>
-    
- 
-
-              </div>
-   
-    <div class = "daily_holder2 review-holder right_holder">
-        <div class = "daily-link rev-link">
-
-              </div>
-    <div class= "daily-rev review-text-hold">
-    <p>'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign"><b>The Daily Mail</b></p>  
- 
-    </div>
-    
-     
- 
-
-              </div>
-    
-      <div class = "clear_floats"></div>
- <div class = "clear_floats"></div>
-<div class = "daily_holder review-holder left_holder">
-      <div class = "i-d-link rev-link">
-
-              </div>
-    <div class= "i-d-rev review-text-hold">
-        <p class = "smaller-text">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’ </p><p class = "smaller-text pub-sign"><b>ID Magazine</b></p>  
-    </div>
-    
-   
- 
-
-              </div>
-
-    <div class = "tls_holder review-holder right_holder">
-         
-     <div class = "tls-link rev-link">
-
-              </div>
-    <div class= "tls-rev review-text-hold">
-    <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism . . .’ </p><p class = "smaller-text pub-sign"><b>Times Literary Review</b></p>  
-
- 
-    </div>
-   
- 
-
-              </div>
-
- 
-
+{% block review-block %}
+    {% endblock %}
 
 
     
