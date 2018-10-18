@@ -98,7 +98,7 @@
     
     
     .contact-holder{
-        position:absolute;
+        position:relative;
         width:100%;
         min-width: 330px;
         height:900px;
@@ -106,13 +106,13 @@
         border-radius: 10px;
         margin-top:0;
         background-color: black;
-        opacity: 0.8;
+        opacity: 1;
     }
     
     
     .con-backing{
         background-color: black;
-        opacity:0.9;
+        opacity:0.85;
         position:relative;
         margin-top:-1000px;
         width:100%;
@@ -138,6 +138,14 @@
     .item-bg{
         max-height: 635px;
     }
+    
+    .mildmay-contact-hold-front{
+         margin:0 auto;
+      margin-top:200px;
+        width:100%;
+       
+            }
+          
     
     
         
@@ -172,6 +180,10 @@
         z-index:999999999999999999999999999;
     }
     
+ 
+    
+    
+    
     
 }
     
@@ -190,11 +202,19 @@
 </div>
 
 <div class = "contact-holder" >
-    <div class = "con-backing"></div>
     
-         {% block progSlider %}
-        
-           {% endblock %}
+    <div class = "mildmay-contact-hold-front">
+       
+         {% block mildmay-contact-block %}
+{% endblock %}
+            
+            </div>
+    <div class = "con-backing">
+    
+     
+        </div>
+    
+    
     
     
     
@@ -276,7 +296,7 @@
 
   
 
-      <div class="news-slider__item swiper-slide" id = "hoper">
+      <div class="news-slider__item swiper-slide contact_slide" id = "hoper">
         <a href="#" class="news__item no_underline" id = "contact-item">
         {% block slide_4_block %}
 {% endblock %}
@@ -373,6 +393,9 @@
     
     $(".sign-up-holder").hide();
           
+
+     
+   
 
     
 

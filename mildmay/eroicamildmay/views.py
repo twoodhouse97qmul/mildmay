@@ -9,6 +9,16 @@ from django.views.generic.edit import UpdateView
 from django.views import generic
 from django.shortcuts import get_object_or_404
 from django.urls import reverse
+from .models import Message
+from django.shortcuts import redirect
+from django.shortcuts import render
+from django.template.response import TemplateResponse
+from django.core import serializers
+from django.http import HttpResponse
+from django.http import JsonResponse
+import json
+from django.views.decorators.csrf import csrf_exempt
+
 
 
 def index(request):
@@ -55,6 +65,25 @@ def twcontact(request):
 
     }
     return render(request, 'contact.html', context)
+
+@csrf_exempt
+def cont(request):
+    if request.method == 'POST':
+        namm = request.POST['namm']
+        emm = request.POST['emm']
+        mess = request.POST['mess']
+        print(namm)
+        print(emm)
+        print(mess)
+
+
+        Message.objects.create(
+        name = namm,
+        email = emm,
+        message = mess
+        )
+
+        return HttpResponse(status=200)
 
 
 def twwdabout(request):

@@ -233,7 +233,6 @@
         float:right;
         width: 80%;
         padding-top:20px;
-         
         text-align:center;
     }
     
@@ -304,8 +303,8 @@
     }
     
     .observer-link{
-         height:50px;
-        width:20%;
+        height:50px;
+        width:50px;
         background-image:url("{% static 'photos/gaurdian.png' %}");
            background-size:contain;
         float:left;
@@ -412,6 +411,7 @@
         padding-bottom:0;
         padding:8px;
         color:black;
+       
          
       
     }
@@ -568,8 +568,68 @@
     
     .review-holder-a{
         height:65px;
-        background-color: blue;
+       
     }
+    
+    
+#contact-container {
+  width: 400px;
+  margin: 25px auto;
+  float:right;
+height:300px;
+    margin-right:50px;
+    margin-bottom:150px;
+    text-align: center;
+}
+
+.whysign {
+  float: left;
+
+  width: 480px;
+  height: 347px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.signup {
+  
+  width: 300px;
+  padding: 30px 20px;
+  
+  text-align: center;
+
+    margin:0 auto;
+}
+
+
+
+
+     .con-in{
+        display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: rgba(0,0,0,.4);
+  box-shadow: 1px 6px 26px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    
+    .con-in:focus{
+        outline: none;
+  border-color: #53CACE;
+    }
+    .con-text-field{
+        max-height:200px;
+         max-width:290px;
+        
+    }
+    
     
     @media only screen and (max-width: 760px) {
     
@@ -585,6 +645,16 @@
         box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
         
     }
+        
+        .review-div{
+            width: 325px;
+        
+        }
+        
+    }
+    
+    
+    .contact-text{
         
     }
     
@@ -611,7 +681,7 @@
       
       <div class = "tele-blckv1">
       <div class = "tele-slider-block-holdv1">
-        {% block new-feature %}
+        {% block new-featureq %}
         {% endblock %}
           
           </div>
@@ -688,7 +758,7 @@
 
               </div>
     <div class= "daily-rev review-text-hold">
-    <p>'Mildmay tells a good story ...’ <b>The Daily Mail</b>
+    <p class = "smaller-text">'Mildmay tells a good story ...’ <b>The Daily Mail</b>
  <p>
     </div>
     
@@ -842,7 +912,7 @@
 
               </div>
     <div class= "daily-rev review-text-hold">
-    <p>'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign"><b>The Daily Mail</b></p>  
+    <p class = "smaller-text">'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign"><b>The Daily Mail</b></p>  
  
     </div>
     
@@ -987,7 +1057,7 @@
 
               </div>
     <div class= "daily-rev review-text-hold">
-    <p>'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign"><b>The Daily Mail</b></p>  
+    <p class = "smaller-text">'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign"><b>The Daily Mail</b></p>  
  
     </div>
     
@@ -1053,7 +1123,7 @@
             <span class="slider_titlo_text" ><h1>eroica mildmay
 </h1></span>
       <div class = "tele-slider-block-hold">
-        {% block new-featureq %}
+        {% block new-feature %}
         {% endblock %}
           </div>
       
@@ -1195,7 +1265,8 @@ Responsive and communicative – and with communication being the absolute key, 
 
 
 {% block slide_5_block %}
-
+<div class = "contact-remove-slide">
+<div class = "contact-text">
 <div class="slider_titlo">
             <span class="slider_titlo_text"><h1>contact</h1></span>
            
@@ -1208,13 +1279,38 @@ Responsive and communicative – and with communication being the absolute key, 
     
     <i class="fas fa-envelope"></i> eroica@eroicamildmay.co.uk <br>
     <i class="fas fa-mobile"></i> 07876 404454 <br> <br>
-    Alternatively, contact me using the tool below:
+        <button class = "btn btn-primary con-butt3">Use Quick Contact Tool</button>
+    
+   
 </p>
+</div>
 
 
-   <div class = "centered-butt">
-    <button class = "btn btn-primary con-butty">Use The Quick Contact Tool</button>
-       </div>
+<div class = "cleario"></div>
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    
+
+         
+
+          $(".con-butt3").on('click',function(){
+              $(".contact-remove-slide").fadeOut();
+              //$(".all-stuff").hide();
+              $(".contact-holder").css("zIndex","9999999999999");
+             $(".contact-holder").fadeIn();
+              //hide the actual shit?:
+          }); 
+          
+
+  
+    
+
+
+</script>
+   
       
  
     

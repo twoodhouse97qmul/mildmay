@@ -1,0 +1,159 @@
+ {% extends 'opening/review-div.html' %}
+
+{% block mildmay-contact-block %}
+
+   
+
+
+<style>
+   
+    
+    
+#contact-container {
+    position:absolute;
+  width: 80%;
+  left:10%;
+    z-index:99999999999999999999;
+    height:300px;
+    margin-bottom:150px;
+    text-align: center;
+  
+    
+ 
+}
+
+.whysign {
+
+
+  width: 480px;
+  height: 347px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.signup {
+  
+  height:300px;
+  width: 100%;
+  padding: 30px 20px;
+
+  text-align: center;
+  margin:0 auto;
+    
+}
+
+
+
+
+     .con-in{
+        display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: rgba(0,0,0,.4);
+  box-shadow: 1px 6px 26px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    
+    .con-in:focus{
+        outline: none;
+        border-bottom-width: 3px;  
+  border-color: #53CACE;
+    }
+    .con-text-field{
+        max-height:200px;
+         max-width:290px;
+        
+    }
+    
+     .back-but{
+        position:relative;
+        margin-top:-100px;
+    }
+    
+
+    
+    
+
+
+</style>
+   
+
+<div id='contact-container'>
+    <div class = "back-button">
+        <button class = "btn btn-primary back-but">Go Back</button>
+    </div>
+  <div class='signup'>
+
+         <div class = "penis_test" id = "p-test">
+         <input id = "contact-name" name="con-name-new" class = "con-in" type='text' placeholder='name:'  />
+             </div>
+       <input id = "email-in" class = "con-in" type='text' placeholder='your phone or email'  />
+       
+        <textarea id = "message-in"  class = "con-in con-text-field" placeholder = "Write Your Message Here..."></textarea>
+       
+
+       <button class = "btn btn-primary" id = "mildmay-sub-but">Send Message</button>
+      
+      
+    
+  </div>
+
+</div>
+
+
+  
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        
+        $(".back-but").on("click",function(){
+            removeStuff();
+        });
+        
+        $("#mildmay-sub-but").on("click",function(){
+                            
+       var ajaxOptions = {
+              type: 'POST',
+              url:'contactme',
+              data:{
+                  namm:$("#contact-name").val(),
+                  emm:$("#email-in").val(),
+                  mess:$("#message-in").val()
+              },
+              success : function () {
+              removeStuff();
+              }
+            }
+
+            $.ajax(ajaxOptions);
+        });
+        
+        
+        function removeStuff(){
+              $(".contact-remove-slide").fadeIn();
+              //$(".all-stuff").hide();
+              $(".contact-holder").css("zIndex","0");
+             $(".contact-holder").fadeOut();
+        }
+      
+    
+      
+    
+</script>
+
+
+
+
+
+
+
+
+{% endblock %}
