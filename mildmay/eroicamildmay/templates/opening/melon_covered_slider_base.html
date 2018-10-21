@@ -180,12 +180,18 @@
         z-index:999999999999999999999999999;
     }
     
+   
  
     
     
     
     
 }
+    
+     .front-slide{
+        max-width:900px;
+    }
+    
     
     
     
@@ -250,7 +256,7 @@
         
          
       
-      <div class="news-slider__item swiper-slide first_slidy">
+      <div class="news-slider__item swiper-slide first_slidy front-slide">
         <div class="news__item no_underline" id = "abcdff">
           {% block slide_2_block %}
             {% endblock %}
@@ -265,13 +271,7 @@
         
         
         
-        <div class="news-slider__item swiper-slide first_slidy">
-        <div class="news__item no_underline" >
-          {% block version_two %}
-{% endblock %}
-
-        </div>
-      </div>
+       
         
        
         
@@ -320,6 +320,14 @@
 {% endblock %}
           
         </a>
+      </div>
+        
+         <div class="news-slider__item swiper-slide first_slidy">
+        <div class="news__item no_underline" >
+          {% block version_two %}
+{% endblock %}
+
+        </div>
       </div>
         
         
