@@ -163,7 +163,7 @@ a, a:hover {
 }
 .news-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #ffffff;
+  background: black;
   width: 100px;
   transition-delay: 0s;
 }
