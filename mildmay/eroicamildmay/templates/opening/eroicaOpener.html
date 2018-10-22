@@ -2,675 +2,7 @@
 
 {% block slide_1_block %}
 
-    {% load static %}
 
-<style>
-    
-      .contact-holder{
-        position:absolute;
-        width:100%;
-        min-width: 330px;
-        height:900px;
-        z-index:0;
-        border-radius: 10px;
-        margin-top:0;
-        background-color: black;
-        opacity: 0.8;
-    }
-    
-
-   
-    .ani-frame{
-            width:96%;
-        height:96%;
-        position:relative;
-        left:2%;
-        right:2%;
-        top:2%;
-        border:none;
-        
-        
-        }
-    
-    
-    .slider_titlo_text{
-        text-align: center;
-    }
-    
-    .con-butty{
-        margin:0 auto;
-        margin-top:40px;
-    }
-    
-    .bing{
-        background-color: black;
-        }
-    
-    
-    .bingpot{
-        background-color:#2A2A2A;
-        
-    }
-    
-    .slider_titlo{
-        border-width:0;
-        border-bottom:2px;
-        border-style: solid;
-        margin-bottom:10px;
-        font-family: 'American Typewriter', serif;
-      
-    }
-    
-     .slider_titlob{
-        border-width:0;
-       
-        margin-bottom:10px;
-        font-family: 'American Typewriter', serif;
-      
-    }
-    
-    .americano{
-         font-family: 'American Typewriter', serif;
-    }
-    
-    .media-links-div{
-       
-        background-color: #28112B;
-    }
-    
-    .tele-slider-block-hold{
-       
-        position:relative;
-        background-color: #d2dfcc;
-        height:199px;
-        width:335px;
-        overflow: hidden;
-        margin: 0 auto;
-        border-radius:15px;
-        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
-        
-    }
-    
-     .tele-slider-block-holdv1{
-       
-        position:relative;
-        background-color: #d2dfcc;
-        height:299px;  
-        width:502px;   
-        overflow: hidden;
-        margin: 0 auto;
-        border-radius:15px;
-        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
-        border-radius:15px;
-        
-    }
-    
-    
-    .eroica-photo{
-       
-        
-        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
-         border-radius:8px;
-        background-image:url("{% static 'photos/eroica.jpg' %}");
-        background-size: cover;
-         margin-top:20px;
-        float:left;
-        width:40%;
-        height:450px;
-        margin-bottom:10px;
-        
-        
-    }
-    
-  
-
-    .gaurdian-link{
-        background-image:url("{% static 'photos/gaurdian.png' %}");
-        background-size: cover;
-        
-       
-    }
-    
-    .review-holder{
-     
-        width: 40%;
-    
-        padding:8px;
-        color:black;
-        
-        border:0;
-        border-style:solid;
-        border-width:2px;
-        border-bottom:0;
-        border-left:0;
-        border-right:0;
-        padding-bottom:0;
-        margin-bottom:0;
-        margin-top:0;
-        
-
-        
-    }
-    
-    .review-holderv1{
-     
-        width: 80%;
-        padding:8px;
-        color:black;
-        border:0;
-        border-style:solid;
-        border-width:2px;
-        border-bottom:0;
-        border-left:0;
-        border-right:0;
-        padding-bottom:0;
-        margin:0;
-        
-
-        
-    }
-    
-    #top-texxt{
-     
-    }
-    
-    .sunday_holder{
-    
-    margin-left:5%;
-    
-    margin-bottom:0;
-        
-     
-    }
-    
-    .independent_holder{
-        margin-right:5%;
-        padding-bottom:2px;
-        margin-bottom:0;
-       
-    }
-    
-      .daily_holder{
-      
-       margin-top:0;
-   
-     
-    }
-    
-     .tls_holder{
-      
-       margin-top:-5px;
-   
-     
-    }
-    
-    .daily_holder2{
-      
-       margin-top:0px;
-   
-     
-    }
-    
-    .single-line-rev-a{
-        height:60px;
-        background-color: blue;
-    }
-    
-    
-     
-    
-    .sunday-rev{
-        text-align:center;
-        padding-top:0px;
-        width:75%;
-        float:right;
-        
-        
-        
-    }
-    
-    .daily-rev{
-        float:right;
-        width: 80%;
-        padding-top:20px;
-        text-align:center;
-    }
-    
-    .i-d-rev{
-        float:right;
-        width: 80%;
-        padding-top:5px;
-        text-align:center;
-        
-    }
-    
-    
-     
-    .times-rev{
-       
-        padding-top:15px;
-        width:80%;
-        text-align:center;
-        float:Right;
-   
-        
-    }
-    
-    .tls-rev{
-       
-        padding-top:10px;
-        width:80%;
-        text-align:center;
-        float:Right;
-        padding-bottom:0;
-        margin-bottom:0;
-   
-        
-    }
-    
-    .independent-rev{
-       text-align:center;
-        float:right;
-         width: 75%;
-        padding-top:6px;
-        padding-bottom:0;
-        
-    }
-    
-    
-    
-    .observer-rev{
-       text-align:center;
-        width: 80%;
-        float:right;
-        margin-top:10px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        
-        
-        
-    }
-    
-    
-    .sunday-link{
-        height:45px;
-        width:20%;
-        background-image:url("{% static 'photos/sunday_times.png' %}");
-        background-size: contain;
-        float:left;
-         background-repeat: no-repeat;
-        
-       
-    }
-    
-    .observer-link{
-        height:50px;
-        width:50px;
-        background-image:url("{% static 'photos/gaurdian.png' %}");
-           background-size:contain;
-        float:left;
-        background-repeat: no-repeat;
-         
-         
-         
-       
-    }
-    
-    .centered-butt{
-        margin:0 auto;
-  
-        width:205px;
-    }
-    
-     .daily-link{
-        height:80px;
-        width:80px;
-        background-image:url("{% static 'photos/daily_mail.png' %}");
-        background-size:contain;
-        position:relative;
-         
-        background-repeat: no-repeat;
-         float:left;
-         margin-left: -15px;
-         margin-top:-16px;
-        
-        
-      
-         
-         
-       
-    }
-    
-    .i-d-link{
-        height:30px;
-        width:50px;
-        margin-top:5px;
-        background-image:url("{% static 'photos/ID.png' %}");
-        background-size:contain;
-        float:left;
-        background-repeat: no-repeat;
-         
-         
-       
-    }
-    
-    .tls-link{
-        height:50px;
-        width:20%;
-        background-image:url("{% static 'photos/times.png' %}");
-        background-size:contain;
-        float:left;
-        background-repeat: no-repeat;
-         
-           
-         
-         
-       
-    }
-    
-    
-    
-      
-    
-    
-     .independent-link{
-        height:50px;
-        width:20%;
-        background-image:url("{% static 'photos/independent.png' %}");
-        background-size:contain;
-        float:left;
-        background-repeat: no-repeat;
-          
-       
-         
-         
-       
-    }
-    
-    .cleario{
-        clear:both;
-        background-color: blue;
-        margin:0;
-        padding:0;
-    }
-    
-    
-    .review-div{
-
-        width:100%;
-   
-        border-color:black;
-        border:0px;
-        border-radius:5px;
-        border-style: solid;
-     
-        /*background-color: #E6E6E9;
-          
-            #2A2A72;*/
-        margin:0 auto;
-        margin-bottom:0;
-        padding-bottom:0;
-        padding:0px;
-        color:black;
-       
-       
-         
-      
-    }
-    
-    .observer_holder{
-        padding-bottom:8px;
-        margin-top:0;
-      
-    }
-    
-    .smaller-text{
-        font-size:80%;
-    }
-    
-    .right_holder{
-        float:right;
-        margin-right:5%;
-    }
-    
-    .ital{
-        font-style: italic;
-    }
-    
-    .left_holder{
-        float:left;
-        margin-left:5%;
-    }
-    
-    .clear_floats{
-        
-        clear:both;
-    }
-    
-    .top-rev{
-        height:100px;
-    }
-    
-    #slide_1_hold{
-        height:500px;
-    }
-    
-    .times-font{
-         font-family: "Times New Roman", Times, serif;
-    }
-    
-    .abcd{
-        text-align:center;
-    }
-    
-    .justy{
-        text-align: justify;
-    }
-    
-    
-    .review-text-hold-na{
-         float:right;
-        width: 75%;
-        text-align:center;
-    }
-    .review-text-hold-long{
-         float:right;
-        width: 65%;
-        text-align:center;
-    }
-    
-    .slightly-small{
-        font-size:90%;
-    }
-    
-     .slightly-smallnn{
-        font-size:85%;
-    }
-    
-    
-    .custom_news{
-        
-        width:50%;
-        float:right;
-    }
-    
-    .press-title-holder{
-        width:100%;
-    }
-    .line-right{
-        color:black;
-        float:right;
-         width:30%;
-        margin-right:5%;
-        margin-top:10px;
-         border-style:solid;
-         border-bottom:2px;
-    }
-    
-    .line-left{
-         color:black;
-   
-        float:left;
-        width:30%;
-        margin-left:5%;
-        margin-top:10px;
-        border-style:solid;
-        border-bottom:2px;
-    }
-    
-    .press-text{
-     margin:0 auto;
-    width:100%;
-   text-align: center;
-    }
-    
-    .titlo-left{
-        float:left;
-        width:30%;
-        text-align: center;
-        margin-top:25px;
-        border-style:solid;
-        border-width:2px;
-        border-top:0;
-        border-left:0;
-        border-right:0;
-          
-      
-    }
-     .titlo-right{
-        float:right;
-        width:70%;
-        
-        text-align: center;
-    }
-    
-    .v2-left{
-        width:50%;
-        float:left;
-    }
-    
-    .review-text{
-     text-align: justify;
-    }
-    
-     .v2-right{
-        width:50%;
-         float:right;
-    }
-    
-    .tele-blck{
-        margin-top:50px;
-    }
-    
-    .ll{
-        font-size:120%;
-    }
-    
-    .pub-sign{
-        margin-bottom:0;
-        padding-bottom:0;
-       
-    }
-    
-    .review-holder-a{
-        height:65px;
-       
-    }
-    
-    
-#contact-container {
-  width: 400px;
-  margin: 25px auto;
-  float:right;
-height:300px;
-    margin-right:50px;
-    margin-bottom:150px;
-    text-align: center;
-}
-
-.whysign {
-  float: left;
-
-  width: 480px;
-  height: 347px;
-  border-radius: 0 5px 5px 0;
-  padding-top: 20px;
-  padding-right: 20px;
-}
-
-.signup {
-  
-  width: 300px;
-  padding: 30px 20px;
-  
-  text-align: center;
-
-    margin:0 auto;
-}
-
-
-
-
-     .con-in{
-        display: block;
-  margin: 0 auto;
-  width: 80%;
-  border: 0;
-  border-bottom: 1px solid rgba(0,0,0,.2);
-  height: 45px;
-  line-height: 45px;  
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: rgba(0,0,0,.4);
-  box-shadow: 1px 6px 26px 2px rgba(0, 0, 0, 0.15);
-    }
-
-    
-    .con-in:focus{
-        outline: none;
-  border-color: #53CACE;
-    }
-    .con-text-field{
-        max-height:200px;
-         max-width:290px;
-        
-    }
-    
-    
-    @media only screen and (max-width: 760px) {
-    
-    .tele-slider-block-hold{
-       
-        position:relative;
-        background-color: #d2dfcc;
-        height:175px;
-        width:300px;
-        overflow: hidden;
-        margin: 0 auto;
-        border-radius:15px;
-        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
-        
-    }
-        
-        .review-div{
-            width: 325px;
-        
-        }
-        
-    }
-    
-    
-    .contact-text{
-        
-    }
-    
-    
-    
-    
-    
-   
-   
-    
-</style>
 
 
 <div class = "opac-div" id = "slide_1_hold">
@@ -1120,6 +452,696 @@ height:300px;
 
 {% block slide_2_block %}
 
+    {% load static %}
+
+<style>
+    
+      .contact-holder{
+        position:absolute;
+        width:100%;
+        min-width: 330px;
+        height:900px;
+        z-index:0;
+        border-radius: 10px;
+        margin-top:0;
+        background-color: black;
+        opacity: 0.8;
+    }
+    
+
+   
+    .ani-frame{
+            width:96%;
+        height:96%;
+        position:relative;
+        left:2%;
+        right:2%;
+        top:2%;
+        border:none;
+        
+        
+        }
+    
+    
+    .slider_titlo_text{
+        text-align: center;
+    }
+    
+    .con-butty{
+        margin:0 auto;
+        margin-top:40px;
+    }
+    
+    .bing{
+        background-color: black;
+        }
+    
+    
+    .bingpot{
+        background-color:#2A2A2A;
+        
+    }
+    
+    .slider_titlo{
+        border-width:0;
+        border-bottom:2px;
+        border-style: solid;
+        margin-bottom:10px;
+        font-family: 'American Typewriter', serif;
+      
+    }
+    
+     .slider_titlob{
+        border-width:0;
+       
+        margin-bottom:10px;
+        font-family: 'American Typewriter', serif;
+      
+    }
+    
+    .americano{
+         font-family: 'American Typewriter', serif;
+    }
+    
+    .media-links-div{
+       
+        background-color: #28112B;
+    }
+    
+    .tele-slider-block-hold{
+       
+        position:relative;
+        background-color: #d2dfcc;
+        height:199px;
+        width:335px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius:15px;
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+        
+    }
+    
+     .tele-slider-block-holdv1{
+       
+        position:relative;
+        background-color: #d2dfcc;
+        height:299px;  
+        width:502px;   
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius:15px;
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+        border-radius:15px;
+        
+    }
+    
+    
+    .eroica-photo{
+       
+        
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+         border-radius:8px;
+        background-image:url("{% static 'photos/eroica.jpg' %}");
+        background-size: contain;
+        background-repeat: no-repeat;
+         margin-top:20px;
+        float:left;
+        width:351px;
+        height:450px;
+        margin-bottom:10px;
+        
+        
+    }
+    
+  
+
+    .gaurdian-link{
+        background-image:url("{% static 'photos/gaurdian.png' %}");
+        background-size: cover;
+        
+       
+    }
+    
+    .review-holder{
+     
+        width: 40%;
+    
+        padding:8px;
+        color:black;
+        
+        border:0;
+        border-style:solid;
+        border-width:2px;
+        border-bottom:0;
+        border-left:0;
+        border-right:0;
+        padding-bottom:0;
+        margin-bottom:0;
+        margin-top:0;
+        
+
+        
+    }
+    
+    .review-holderv1{
+     
+        width: 80%;
+        padding:8px;
+        color:black;
+        border:0;
+        border-style:solid;
+        border-width:2px;
+        border-bottom:0;
+        border-left:0;
+        border-right:0;
+        padding-bottom:0;
+        margin:0;
+        
+
+        
+    }
+    
+    #top-texxt{
+     
+    }
+    
+    .sunday_holder{
+    
+    margin-left:5%;
+    
+    margin-bottom:0;
+        
+     
+    }
+    
+    .independent_holder{
+        margin-right:5%;
+        padding-bottom:2px;
+        margin-bottom:0;
+       
+    }
+    
+      .daily_holder{
+      
+       margin-top:0;
+   
+     
+    }
+    
+     .tls_holder{
+      
+       margin-top:-5px;
+   
+     
+    }
+    
+    .daily_holder2{
+      
+       margin-top:0px;
+   
+     
+    }
+    
+    .single-line-rev-a{
+        height:60px;
+        background-color: blue;
+    }
+    
+    
+     
+    
+    .sunday-rev{
+        text-align:center;
+        padding-top:0px;
+        width:75%;
+        float:right;
+        
+        
+        
+    }
+    
+    .daily-rev{
+        float:right;
+        width: 80%;
+        padding-top:20px;
+        text-align:center;
+    }
+    
+    .i-d-rev{
+        float:right;
+        width: 80%;
+        padding-top:5px;
+        text-align:center;
+        
+    }
+    
+    
+     
+    .times-rev{
+       
+        padding-top:15px;
+        width:80%;
+        text-align:center;
+        float:Right;
+   
+        
+    }
+    
+    .tls-rev{
+       
+        padding-top:10px;
+        width:80%;
+        text-align:center;
+        float:Right;
+        padding-bottom:0;
+        margin-bottom:0;
+   
+        
+    }
+    
+    .independent-rev{
+       text-align:center;
+        float:right;
+         width: 75%;
+        padding-top:6px;
+        padding-bottom:0;
+        
+    }
+    
+    
+    
+    .observer-rev{
+       text-align:center;
+        width: 80%;
+        float:right;
+        margin-top:10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+        
+        
+    }
+    
+    
+    .sunday-link{
+        height:45px;
+        width:25%;
+        background-image:url("{% static 'photos/sunday.png' %}");
+        background-size: contain;
+        float:left;
+         background-repeat: no-repeat;
+        z-index:999999999999999999999;
+        
+       
+    }
+    
+    .telgraph-back{
+        background-image:url("{% static 'photos/telegraph.png' %}");
+       z-index:9999999999999999;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height:50px;
+    }
+    
+    .observer-link{
+        height:80px;
+        width:110px;
+        background-image:url("{% static 'photos/observer.png' %}");
+           background-size:contain;
+        float:left;
+        background-repeat: no-repeat;
+         z-index:999999999999999999999;
+         
+         
+       
+    }
+    
+    .centered-butt{
+        margin:0 auto;
+  
+        width:205px;
+    }
+    
+     .daily-link{
+        height:80px;
+        width:80px;
+        background-image:url("{% static 'photos/daily_mail.png' %}");
+        background-size:contain;
+        position:relative;
+         
+        background-repeat: no-repeat;
+         float:left;
+         margin-left: -15px;
+         margin-top:-16px;
+         z-index:999999999999999999999;
+        
+        
+      
+         
+         
+       
+    }
+    
+    .i-d-link{
+        height:30px;
+        width:50px;
+        margin-top:5px;
+        background-image:url("{% static 'photos/ID.png' %}");
+        background-size:contain;
+        float:left;
+        background-repeat: no-repeat;
+        z-index:999999999999999999999;
+         
+         
+       
+    }
+    
+    .tls-link{
+        height:50px;
+        width:20%;
+        background-image:url("{% static 'photos/times.png' %}");
+        background-size:contain;
+        float:left;
+        background-repeat: no-repeat;
+        z-index:999999999999999999999;
+         
+           
+         
+         
+       
+    }
+    
+    
+    
+      
+    
+    
+     .independent-link{
+        height:60px;
+        width:25%;
+        background-image:url("{% static 'photos/independent.png' %}");
+        background-size:contain;
+        float:left;
+        background-repeat: no-repeat;
+         z-index:999999999999999999999;
+   
+          
+       
+         
+         
+       
+    }
+    
+    .cleario{
+        clear:both;
+        background-color: blue;
+        margin:0;
+        padding:0;
+    }
+    
+    
+    .review-div{
+
+        width:100%;
+   
+        border-color:black;
+        border:0px;
+        border-radius:5px;
+        border-style: solid;
+     
+        /*background-color: #E6E6E9;
+          
+            #2A2A72;*/
+        margin:0 auto;
+        margin-bottom:0;
+        padding-bottom:0;
+        padding:0px;
+        color:black;
+       
+       
+         
+      
+    }
+    
+    .observer_holder{
+        padding-bottom:8px;
+        margin-top:0;
+      
+    }
+    
+    .smaller-text{
+        font-size:80%;
+    }
+    
+    .right_holder{
+        float:right;
+        margin-right:5%;
+    }
+    
+    .ital{
+        font-style: italic;
+    }
+    
+    .left_holder{
+        float:left;
+        margin-left:5%;
+    }
+    
+    .clear_floats{
+        
+        clear:both;
+    }
+    
+    .top-rev{
+        height:100px;
+    }
+    
+    #slide_1_hold{
+        height:500px;
+    }
+    
+    .times-font{
+         font-family: "Times New Roman", Times, serif;
+    }
+    
+    .abcd{
+        text-align:center;
+    }
+    
+    .justy{
+        text-align: justify;
+    }
+    
+    
+    .review-text-hold-na{
+         float:right;
+        width: 75%;
+        text-align:center;
+    }
+    .review-text-hold-long{
+         float:right;
+        width: 65%;
+        text-align:center;
+    }
+    
+    .slightly-small{
+        font-size:90%;
+    }
+    
+     .slightly-smallnn{
+        font-size:85%;
+    }
+    
+    
+    .custom_news{
+        
+        width:50%;
+        float:right;
+    }
+    
+    .press-title-holder{
+        width:100%;
+    }
+    .line-right{
+        color:black;
+        float:right;
+         width:30%;
+        margin-right:5%;
+        margin-top:10px;
+         border-style:solid;
+         border-bottom:2px;
+    }
+    
+    .line-left{
+         color:black;
+   
+        float:left;
+        width:30%;
+        margin-left:5%;
+        margin-top:10px;
+        border-style:solid;
+        border-bottom:2px;
+    }
+    
+    .press-text{
+     margin:0 auto;
+    width:100%;
+   text-align: center;
+    }
+    
+    .titlo-left{
+        float:left;
+        width:30%;
+        text-align: center;
+        margin-top:25px;
+        border-style:solid;
+        border-width:2px;
+        border-top:0;
+        border-left:0;
+        border-right:0;
+          
+      
+    }
+     .titlo-right{
+        float:right;
+        width:70%;
+        
+        text-align: center;
+    }
+    
+    .v2-left{
+        width:50%;
+        float:left;
+    }
+    
+    .review-text{
+     text-align: justify;
+    }
+    
+     .v2-right{
+        width:50%;
+         float:right;
+    }
+    
+    .tele-blck{
+        margin-top:50px;
+    }
+    
+    .ll{
+        font-size:120%;
+    }
+    
+    .pub-sign{
+        margin-bottom:0;
+        padding-bottom:0;
+       
+    }
+    
+    .review-holder-a{
+        height:65px;
+       
+    }
+    
+    
+    .bigger-nl{
+        font-size:120%;
+    }
+    
+    
+#contact-container {
+  width: 400px;
+  margin: 25px auto;
+  float:right;
+height:300px;
+    margin-right:50px;
+    margin-bottom:150px;
+    text-align: center;
+}
+
+.whysign {
+  float: left;
+
+  width: 480px;
+  height: 347px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.signup {
+  
+  width: 300px;
+  padding: 30px 20px;
+  
+  text-align: center;
+
+    margin:0 auto;
+}
+
+
+
+
+     .con-in{
+        display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: rgba(0,0,0,.4);
+  box-shadow: 1px 6px 26px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    
+    .con-in:focus{
+        outline: none;
+  border-color: #53CACE;
+    }
+    .con-text-field{
+        max-height:200px;
+         max-width:290px;
+        
+    }
+    
+    
+    @media only screen and (max-width: 760px) {
+    
+    .tele-slider-block-hold{
+       
+        position:relative;
+        background-color: #d2dfcc;
+        height:175px;
+        width:300px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius:15px;
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+        
+    }
+        
+        .review-div{
+            width: 325px;
+        
+        }
+        
+    }
+    
+    
+    .contact-text{
+        
+    }
+    
+    
+    
+    
+    
+   
+   
+    
+</style>
+
 
 
 <div class = "opac-div" id = "slide_1_hold">
@@ -1132,7 +1154,7 @@ height:300px;
         {% endblock %}
           </div>
       
-      <span class="slider_titlo_text" id = "top-texxt"><h4>lines of communication
+      <span class="slider_titlo_text" id = "top-texxt"><h4>lines&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;&nbsp;&nbsp;&nbsp;communication
 </h4></span>
            
           </div>
@@ -1209,14 +1231,14 @@ After returning from living in Africa to the United Kingdom in her teens, Eroica
           <p class="news__txt justy slightly-small">
             
               
-              Eroica Mildmay has had column for eighteen months for <b>The Telegraph.co.uk</b> called <b>Notes from a Norfolk Broad</b>, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.
+              Eroica Mildmay has had column for eighteen months for <b class = "telgraph-back">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;</b> called <b>Notes from a Norfolk Broad</b>, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.
 
 <br><br>
     </p>
     <h3 class = "americano">features writer / journalist</h3>
      <p class="news__txt justy slightly-small">
          
-         Eroica Mildmay worked for <b>North Norfolk Living Magazine</b> for five years covering all sorts of subjects, interviewing, many times actually taking part (as in wild swimming, microlight flying, deep-sea fishing, driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in Norfolk and beyond.
+         Eroica Mildmay worked for <b class = "bigger-nl">North Norfolk Living Magazine</b> for five years covering all sorts of subjects, interviewing, many times actually taking part (as in wild swimming, microlight flying, deep-sea fishing, driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in Norfolk and beyond.
 
 
 <br><br>

@@ -131,7 +131,7 @@ a, a:hover {
   z-index: 12;
   cursor: pointer;
   outline: none !important;
-  color:white;
+    color:white;
 }
 .news-slider__arrow:focus {
   outline: none !important;
@@ -149,7 +149,7 @@ a, a:hover {
 }
 .news-slider__pagination {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 .news-slider__pagination .swiper-pagination-bullet {
     
