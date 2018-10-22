@@ -1149,6 +1149,27 @@ height:300px;
     }
     
     
+    .sized-su{
+        width:80%;
+        margin:0 auto;
+    }
+    
+    .right-contact{
+        float:right;
+         width:50%;
+        
+    }
+    
+    .right-contact-m{
+        float:left;
+    }
+    
+     .left-contact{
+        float:left;
+          width:50%;
+       
+    }
+    
     
     
     
@@ -1257,7 +1278,7 @@ She moved over to writing after that, attending the University of East Anglia (U
     <h3 class = "americano">features writer / journalist</h3>
      <p class="news__txt justy slightly-small">
          
-         Eroica Mildmay worked for <b class = "bigger-nl">North Norfolk LIVING Magazine</b> magazine for five years covering all sorts of subjects, interviewing, often actually taking part (as in microlight flying, canoeing around north Norfolk’s marsh inlets, trawler fishing for lobsters, moth hunting (for research purposes), driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in Norfolk and beyond.
+         Eroica Mildmay worked for <b class = "bigger-nl">North Norfolk LIVING</b> magazine for five years covering all sorts of subjects, interviewing, often actually taking part (as in microlight flying, canoeing around north Norfolk’s marsh inlets, trawler fishing for lobsters, moth hunting (for research purposes), driving a Royal National Lifeboat Institution (RNLI) Atlantic 75 Rescue Lifeboat out at sea, etc. etc.) photographing exclusively for the articles and obviously writing the finished product. She had an extensive and dedicated readership in Norfolk and beyond.
 
          
    
@@ -1345,11 +1366,27 @@ Eroica’s work is always highly-finished and delivered in a timely fashion, as 
     
     <i class="fas fa-envelope"></i> eroica@eroicamildmay.co.uk <br>
     <i class="fas fa-phone"></i> 07876 404454 <br> 
-    <i class="fas fa-map-marker-alt"></i> London - Norfolk <br><br>
-        <button class = "btn btn-primary con-butt3">Use Quick Contact Tool</button>
-    
+    <i class="fas fa-map-marker-alt"></i> London - Norfolk
    
+    
 </p>
+    <div class='signup sized-su'>
+<div class = "left-contact">
+         <div class = "penis_test" id = "p-test">
+         <input id = "contact-name" name="con-name-new" class = "con-in" type='text' placeholder='name:'  />
+             </div>
+       <input id = "email-in" class = "con-in" type='text' placeholder='your phone or email'  />
+       </div><div class = "right-contact">
+        <textarea id = "message-in"  class = "con-in con-text-field right-contact-m" placeholder = "Write Your Message Here..."></textarea>
+       
+        </div>
+        
+        <div class = "cleario"></div>
+       <button class = "btn btn-primary" id = "mildmay-sub-but">Send Message</button>
+      
+      
+    
+  </div>
 </div>
 
 
@@ -1360,17 +1397,29 @@ Eroica’s work is always highly-finished and delivered in a timely fashion, as 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
     
+    var ajaxOptions = {
+              type: 'POST',
+              url:'contactme',
+              data:{
+                  namm:$("#contact-name").val(),
+                  emm:$("#email-in").val(),
+                  mess:$("#message-in").val()
+              },
+              success : function () {
+              alert(1);
+              }
+            }
+    
 
          
+        $("#mildmay-sub-but").on("click",function(){
+                            
+       
 
-          $(".con-butt3").on('click',function(){
-              $(".contact-remove-slide").fadeOut();
-              //$(".all-stuff").hide();
-              $(".contact-holder").css("zIndex","9999999999999");
-             $(".contact-holder").fadeIn();
-              //hide the actual shit?:
-          }); 
-          
+            $.ajax(ajaxOptions);
+             
+        });
+        
 
   
     

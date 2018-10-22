@@ -104,7 +104,15 @@
          
             
             $(".contact-holder").hide();
-            
+             
+          $(".con-butt3").on('click',function(){
+              alert(4);
+              $(".contact-remove-slide").fadeOut();
+              //$(".all-stuff").hide();
+              $(".contact-holder").css("zIndex","9999999999999");
+             $(".contact-holder").fadeIn();
+              //hide the actual shit?:
+          }); </script>
            
     
 
@@ -119,7 +127,7 @@
 
 
 
-</script>
+
         
         
 {% load static %}
@@ -130,6 +138,7 @@
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
        
 
+       
        
         
     
