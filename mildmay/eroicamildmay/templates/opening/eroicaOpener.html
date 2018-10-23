@@ -893,10 +893,7 @@
         padding-bottom:0;
         padding:0px;
         color:black;
-       
-       
-         
-      
+     
     }
     
     .observer_holder{
@@ -934,6 +931,11 @@
     
     #slide_1_hold{
         height:500px;
+    }
+    
+     .sslide_1_hold{
+  
+         margin-bottom:30px;
     }
     
     .times-font{
@@ -1116,25 +1118,41 @@ height:300px;
   border-bottom: 1px solid rgba(0,0,0,.2);
   height: 45px;
   line-height: 45px;  
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 1em;
-  color: rgba(0,0,0,.4);
+  color: black;
+ 
   box-shadow: 1px 6px 26px 2px rgba(0, 0, 0, 0.15);
+         
     }
-
+    
+    
+   
     
     .con-in:focus{
         outline: none;
-  border-color: #53CACE;
+  
+         border-bottom: 2px solid;
+        border-color: #2A2A72;
     }
     .con-text-field{
-        max-height:220px;
-         max-width:330px;
+        max-height:180px;
+         max-width:350px;
+        margin-bottom:0;
         
     }
     
     
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: 560px) {
+        
+        
+    .custom_news{
+        width:95%;
+        float:left;
+         padding:3px;
+        padding-top:5px;
+       
+    }
     
     .tele-slider-block-hold{
        
@@ -1154,7 +1172,11 @@ height:300px;
         
         }
         
+        
+        
     }
+    
+    
     
     
     .contact-text{
@@ -1165,7 +1187,7 @@ height:300px;
     .sized-su{
         width:45%;
         float:right;
-       
+        margin-top:-30px;
         
     }
     
@@ -1224,7 +1246,8 @@ height:300px;
         width:50%;
     }
     
-   
+    
+    
     
     
    
@@ -1234,7 +1257,7 @@ height:300px;
 
 
 
-<div class = "opac-div" id = "slide_1_hold">
+<div class = "opac-div sslide_1_hold" id = "slide_1_hold">
 
   <div class="slider_titlob">
             <span class="slider_titlo_text" ><h1>eroica mildmay
@@ -1283,9 +1306,7 @@ height:300px;
             <span class="slider_titlo_text"><h1>about</h1></span>
            
           </div>
-          <div class = "eroica-photo">
-    
-    </div>
+         
      
 
           <p class="news__txt justy slightly-smallnn custom_news">
@@ -1301,6 +1322,10 @@ Eroica moved over to writing after that, and in due course attended the Universi
               
 
                  </p>
+    
+     <div class = "eroica-photo">
+    
+    </div>
     
    <div class = "cleario"></div>
     
@@ -1443,7 +1468,7 @@ get straight back to you! Or call me . . .</p><p class="news__txt justy">
     <i class="fas fa-map-marker-alt"></i> London - Norfolk  </p>
     <p class="news__txt abcd cenneer no-obli">
     
-        <b>Also feel free to contact me for a no-obligation quote.</b></p><p class="news__txt justy">
+        Also feel free to contact me for a no-obligation quote.</p><p class="news__txt justy">
 
 Hourly Rates<br>
 Daily rates<br>
@@ -1464,14 +1489,27 @@ UK-based and international clients welcome.
 
 
     <div class='signup sized-su'>
-
+        
+         
+        
+       
+    
+        
+        <div class = "enter-stuff">
+ 
          <div class = "penis_test" id = "p-test">
-         <input id = "contact-name" name="con-name-new" class = "con-in left-contact" type='text' placeholder='name:'  />
+             <label>Name:</label>
+         <input id = "contact-name" name="con-name-new" class = "con-in left-contact" type='text' placeholder='Enter your name ...'  />
              </div>
-       <input id = "email-in" class = "con-in right-contact" type='text' placeholder='your phone or email'  />
+          <label>Your Contact Details:</label>
+       <input id = "email-in" class = "con-in right-contact" type='text' placeholder='Enter your Phone or Email ...'  />
        <div class = "cleario">  </div>
-        <textarea id = "message-in"  class = "con-in con-text-field right-contact-m" placeholder = "Write Your Message Here..."></textarea>
-         <button class = "btn btn-primary" id = "mildmay-submit-but">Send Message</button>
+          <label>Write Your Message Here:</label>
+        <textarea id = "message-in"  class = "con-in con-text-field right-contact-m" placeholder = "Enter your message ..."></textarea>
+        <button class = "btn btn-primary" id = "mildmay-submit-but" onclick = 'sendMessage();'>Send Message</button>
+            
+        </div>
+       
        
       
         
@@ -1492,9 +1530,8 @@ UK-based and international clients welcome.
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-
-   
     
+     
     var ajaxOptions = {
               type: 'POST',
               url:'contactme',
@@ -1509,18 +1546,26 @@ UK-based and international clients welcome.
             }
     
     
+    function sendMessage(){
+        //$.ajax(ajaxOptions);
+        
+           
+        
+        alert("message sent");
+
+           
+             
+     
+        
+    }
+
+   
+   
+    
    
 
 
-         
-        $("#mildmay-submit-but").on("click",function(){
-                            
-        alert("message sent");
-
-           // $.ajax(ajaxOptions);
-             
-        });
-        
+      
 
   
     

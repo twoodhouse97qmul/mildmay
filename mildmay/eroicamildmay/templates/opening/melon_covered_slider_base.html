@@ -9,7 +9,7 @@
 
  {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/eroicaSliderc.css' %}">
+    <link rel="stylesheet" href="{% static 'css/eroicaSlider.css' %}">
 
 <style>
     
@@ -136,7 +136,9 @@
     }
     
     .item-bg{
-        max-height: 595px;
+        max-height: 605px;
+        min-height:600px;
+        overflow: hidden;
     }
     
     .mildmay-contact-hold-front{
@@ -150,11 +152,16 @@
     
         
         /* Smartphones ----------- */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 560px) {
+    
+    
+    .copyright-tag{
+        display: none;
+    }
   .news-slider__item { 
       
      
-      max-height:500px; 
+      max-height:400px; 
      overflow-y: scroll;
     
     }
@@ -162,14 +169,7 @@
     .news-slider__ctr{
         display:none;
     }
-    
-    .item-bg { 
-      
-     
-    max-height:500px; 
-    
-    
-    }
+  
     
     .main__arrows{
         position:absolute;
