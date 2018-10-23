@@ -760,25 +760,30 @@
        
     }
     
-    .telgraph-back{
-        background-image:url("{% static 'photos/telegraph.png' %}");
-       z-index:9999999999999999;
-        background-size: contain;
+    .telegraph-back{
+        background-image:url("{% static 'photos/tel2.jpg' %}");
+        z-index:9999999999999999;
+        background-size: cover;
         background-repeat: no-repeat;
-        height:50px;
+        position:relative;
+        height:200px;
+        width:220px;
+     
+        margin-top:-20px;
     }
     
     .observer-link{
-        height:70px;
-        width:54px;
+        height:58px;
+        width:44px;
         background-image:url("{% static 'photos/oby.jpg' %}");
         background-size:contain;
         float:left;
         background-repeat: no-repeat;
         
         border-radius:15px;
-  
-        margin-top:-15px;
+
+        margin-top:-13px;
+        margin-left:5px;
          z-index:999999999999999999999999999999;
         
          
@@ -813,8 +818,8 @@
     }
     
     .i-d-link{
-        height:50px;
-        width:75px;
+        height:40px;
+        width:65px;
         margin-top:0px;
         background-image:url("{% static 'photos/ID.png' %}");
         background-size:contain;
@@ -1050,6 +1055,10 @@
         text-align: justify;
     }
     
+    .no-obli{
+        margin-top:60px;
+    }
+    
     
     .centy{
         text-align: center;
@@ -1119,8 +1128,8 @@ height:300px;
   border-color: #53CACE;
     }
     .con-text-field{
-        max-height:200px;
-         max-width:290px;
+        max-height:220px;
+         max-width:330px;
         
     }
     
@@ -1154,23 +1163,35 @@ height:300px;
     
     
     .sized-su{
-        width:80%;
-        margin:0 auto;
+        width:45%;
+        float:right;
+       
+        
     }
     
     .right-contact{
-        float:right;
-         width:50%;
+         margin:0 auto;
+         width:190px;
+        margin-bottom:30px;
+       
         
     }
     
     .right-contact-m{
-        float:left;
+        margin:0 auto;
+        height:200px;
+        margin-top;30px;
+        margin-bottom:30px;
+        width:290px;
+        line-height: normal;
+       
     }
     
      .left-contact{
-        float:left;
-          width:50%;
+        margin:0 auto;
+         width:190px;
+         margin-bottom:30px;
+          
        
     }
     
@@ -1178,6 +1199,32 @@ height:300px;
         text-align: center;
     }
     
+    
+    .sec-conny{
+        margin:0 auto;
+        width:200px;
+    }
+    
+    
+    #mildmay-make-but{
+        position: fixed;
+        z-index:9999999999999999999999999999;
+        margin-top:30px;
+        
+    }
+    
+    
+    .cenny{
+        text-align: center;
+    }
+    
+    
+    .mildmay-contact-text{
+        float:left;
+        width:50%;
+    }
+    
+   
     
     
    
@@ -1270,12 +1317,13 @@ She moved over to writing after that, attending the University of East Anglia (U
            
           </div>
          
+            
             <h3 class = "americano">columnist</h3>
 
           <p class="news__txt justy slightly-small">
               
                           
-              Eroica Mildmay has had column for eighteen months for <b> The Daily Telegraph </b> called  <b>Notes from a Norfolk Broad</b>, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.
+              Eroica Mildmay has had column for eighteen months for <span class = "telegraph-back">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> called  <b>Notes from a Norfolk Broad</b>, which was a humorously rumbustious and much-read countryside-based column with a dedicated readership both here in the UK and around the world.
 
             
 
@@ -1360,53 +1408,66 @@ Eroica’s work is always highly-finished and delivered in a timely fashion, as 
 
 {% block slide_5_block %}
 <div class = "contact-remove-slide">
-<div class = "contact-text">
+
 <div class="slider_titlo">
             <span class="slider_titlo_text"><h2>interested in working together? hurrah!</h2></span>
            
-          </div>
+ </div>
+    
+    
+<div class = "mildmay-contact-text">
+    
+    <p class="news__txt abcd justy"> Got questions? Need a quote? Drop me an email with the details
+    of your project via the contact form to get the ball rolling, and I’ll
 
-
-
-
-<p class="news__txt abcd"> Got questions? Need a quote? Drop me an email with the details
-    of your project via the form below to get the ball rolling, and I’ll
-
-get straight back to you! Or call me . . .<br><br>
+get straight back to you! Or call me . . .</p><p class="news__txt justy">
     
     <i class="fas fa-envelope"></i> eroica@eroicamildmay.co.uk <br>
-    <i class="fas fa-phone"></i> 07876 404454 <br> 
-    <i class="fas fa-map-marker-alt"></i> London - Norfolk </p> <p class="news__txt abcd cenneer">
+    <i class="fas fa-phone"></i> +44 (0) 7876 404 454 <br> 
+    <i class="fas fa-map-marker-alt"></i> London - Norfolk  </p>
+    <p class="news__txt abcd cenneer no-obli">
     
-    Also feel free to contact me for a no-obligation quote.
-<br><br>
+        <b>Also feel free to contact me for a no-obligation quote.</b></p><p class="news__txt justy">
+
 Hourly Rates<br>
 Daily rates<br>
 Packages Negotiable<br>
 Will work in-house or remotely<br>
 
 UK-based and international clients welcome.
-   
+    
+  
     
 </p>
+    
+    
+    </div>
+
+
+
+
+
     <div class='signup sized-su'>
-<div class = "left-contact">
+
          <div class = "penis_test" id = "p-test">
-         <input id = "contact-name" name="con-name-new" class = "con-in" type='text' placeholder='name:'  />
+         <input id = "contact-name" name="con-name-new" class = "con-in left-contact" type='text' placeholder='name:'  />
              </div>
-       <input id = "email-in" class = "con-in" type='text' placeholder='your phone or email'  />
-       </div><div class = "right-contact">
+       <input id = "email-in" class = "con-in right-contact" type='text' placeholder='your phone or email'  />
+       <div class = "cleario">  </div>
         <textarea id = "message-in"  class = "con-in con-text-field right-contact-m" placeholder = "Write Your Message Here..."></textarea>
+         <button class = "btn btn-primary" id = "mildmay-submit-but">Send Message</button>
        
-        </div>
+      
         
         <div class = "cleario"></div>
-       <button class = "btn btn-primary" id = "mildmay-sub-but">Send Message</button>
+        
+    </div>
+
       
       
     
-  </div>
-</div>
+ 
+
 
 
 <div class = "cleario"></div>
@@ -1415,6 +1476,8 @@ UK-based and international clients welcome.
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
+
+   
     
     var ajaxOptions = {
               type: 'POST',
@@ -1429,13 +1492,16 @@ UK-based and international clients welcome.
               }
             }
     
+    
+   
+
 
          
-        $("#mildmay-sub-but").on("click",function(){
+        $("#mildmay-submit-but").on("click",function(){
                             
-       
+        alert("message sent");
 
-            $.ajax(ajaxOptions);
+           // $.ajax(ajaxOptions);
              
         });
         
