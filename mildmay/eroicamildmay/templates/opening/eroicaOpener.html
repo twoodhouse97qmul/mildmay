@@ -1531,8 +1531,25 @@ UK-based and international clients welcome.
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
     
+
+    
+    function sendMessage(){
+        //
+        
+        alert("message sent");
+        sendAJAX();
+       
+
+           
+             
      
-    var ajaxOptions = {
+        
+    }
+    
+   
+    
+    function sendAJAX(){
+         var options = {
               type: 'POST',
               url:'contactme',
               data:{
@@ -1541,22 +1558,10 @@ UK-based and international clients welcome.
                   mess:$("#message-in").val()
               },
               success : function () {
-              alert(1);
+              alert('SUCCESS');
               }
-            }
-    
-    
-    function sendMessage(){
-        //$.ajax(ajaxOptions);
-        
-           
-        
-        alert("message sent");
-
-           
-             
-     
-        
+            };
+         $.ajax(options);
     }
 
    

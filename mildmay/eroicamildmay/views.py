@@ -19,6 +19,7 @@ from django.http import JsonResponse
 import json
 from django.views.decorators.csrf import csrf_exempt
 from django.http import Http404
+from .eroica_mail import Eroica_SMTP;
 
 
 
@@ -49,6 +50,19 @@ def twhome(request):
     }
     return render(request, 'opening/new-feature.html', context)
 
+def land(request):
+    context = {
+
+    }
+    return render(request, 'opening/land.html', context)
+
+
+def oldhome(request):
+    context = {
+
+    }
+    return render(request, 'opening_old/tele-skirting.html', context)
+
 def twPast(request):
     context = {
 
@@ -76,6 +90,9 @@ def cont(request):
         print(namm)
         print(emm)
         print(mess)
+
+        email_help = Eroica_SMTP();
+        email_help.send_mail(namm,emm,mess);
 
 
         Message.objects.create(

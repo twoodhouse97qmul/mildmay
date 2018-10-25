@@ -21,7 +21,9 @@ app_name = 'eroicamildmay'
 
 
 urlpatterns = [
-    path('', views.twhome, name='index'),
+    path('', views.land, name='index'),
+    path('new', views.twhome, name='index'),
+    path('old', views.oldhome, name='index'),
     path('falling/', views.falling, name='porthome'),
     path('contactme', views.cont, name='post_new'),
     path('/contactme', views.cont, name='post_new'),

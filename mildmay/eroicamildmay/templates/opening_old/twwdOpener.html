@@ -1,0 +1,423 @@
+{% extends 'opening/meloncoveredsliderbase.html' %}
+
+{% block slide_1_block %}
+
+    {% load static %}
+
+<style>
+
+   
+    .ani-frame{
+            width:96%;
+        height:96%;
+        position:relative;
+        left:2%;
+        right:2%;
+        top:2%;
+        border:none;
+        
+        
+        }
+    
+    
+    .slider_titlo_text{
+        text-align: center;
+    }
+    
+    .con-butty{
+        margin:0 auto;
+        margin-top:40px;
+    }
+    
+    .bing{
+        background-color: black;
+        }
+    
+    
+    .bingpot{
+        background-color:#2A2A2A;
+        border-color:pink;
+    }
+    
+    .slider_titlo{
+        border-width:0;
+        border-bottom:2px;
+        border-style: solid;
+        margin-bottom:10px;
+      
+    }
+    
+    .media-links-div{
+       
+        background-color: #28112B;
+    }
+    
+    .tele-slider-block-hold{
+       
+        position:relative;
+
+        height:130px;
+        width:100%;
+        overflow: hidden;
+        
+    }
+
+    .gaurdian-link{
+        background-image:url("{% static 'photos/gaurdian.png' %}");
+        background-size: cover;
+       
+    }
+    
+    .review-holder{
+        border:2px;
+        border-radius:5px;
+        border-style: solid;
+        width: 250px;
+        height:80px;
+        background-color: #DA2C38;
+        margin-bottom:20px;
+        padding:8px;
+        
+    }
+    
+    #top-texxt{
+     
+    }
+    
+    .sunday_holder{
+       
+     
+    }
+    
+      .daily_holder{
+       
+   
+     
+    }
+    
+    .sunday-rev{
+      text-align:center;
+        margin-top:5px;
+        
+    }
+    
+    .daily-rev{
+        float:left;
+        width: 170px;
+        padding-top:20px;
+        
+        
+    }
+    
+    .i-d-rev{
+        float:left;
+        width: 160px;
+        padding-top:5px;
+        
+        
+    }
+    
+    
+     
+    .times-rev{
+        float:left;
+        width: 170px;
+        padding-top:15px;
+        
+        
+    }
+    
+    .independent-rev{
+       text-align:center;
+    margin-top:5px;
+    }
+    
+    .observer-rev{
+       text-align:center;
+    }
+    
+    
+    .sunday-link{
+        height:30px;
+        width:160px;
+        background-image:url("{% static 'photos/sunday_times.png' %}");
+        background-size: cover;
+        margin:0 auto;
+       
+    }
+    
+    .observer-link{
+        height:60px;
+        width:60px;
+        background-image:url("{% static 'photos/gaurdian.png' %}");
+        background-size: cover;
+        float:right;
+         
+         
+       
+    }
+    
+     .daily-link{
+        height:60px;
+        width:60px;
+        background-image:url("{% static 'photos/daily_mail.png' %}");
+        background-size: cover;
+        float:right;
+         
+         
+       
+    }
+    
+    .i-d-link{
+        height:40px;
+        width:65px;
+        background-image:url("{% static 'photos/ID.png' %}");
+        background-size: cover;
+        float:right;
+         
+         
+       
+    }
+    
+    
+    
+      .times-link{
+        height:60px;
+        width:60px;
+        background-image:url("{% static 'photos/times.png' %}");
+        background-size: cover;
+        float:right;
+         
+         
+       
+    }
+    
+     .independent-link{
+      
+        background-image:url("{% static 'photos/independent.png' %}");
+        background-size: cover;
+        margin:0 auto;
+        height:35px;
+        width:140px;
+       
+         
+         
+       
+    }
+    
+    
+    .review-div{
+
+        width:100%;
+        height:300px;
+    }
+    
+    .smaller-text{
+        font-size:80%;
+    }
+    
+    .right_holder{
+        float:right;
+    }
+    
+    .left_holder{
+        float:left;
+    }
+    
+    .clear_floats{
+        
+        clear:both;
+    }
+    
+    .top-rev{
+        height:100px;
+    }
+    
+   
+    
+</style>
+
+<div class = "opac-div" id = "slide_1_hold">
+
+  <div class="slider_titlo">
+            <span class="slider_titlo_text" ><h1>Eroica st John Mildmay
+</h1></span>
+      <div class = "tele-slider-block-hold">
+      {% block tele-sliderr %}
+      {% endblock %}
+          </div>
+      
+      <span class="slider_titlo_text" id = "top-texxt"><h1>Lines of Communication
+</h1></span>
+           
+          </div>
+
+
+<div class = "review-div">
+
+<div class = "sunday_holder review-holder left_holder top-rev">
+    
+         <div class = "sunday-link rev-link">
+              </div>
+    <div class= "sunday-rev">
+    <p class = "smaller-text">A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine...’ </p>
+   
+ 
+      </div>
+
+              </div>
+    
+    
+    <div class = "independent_holder review-holder right_holder top-rev">
+        
+         <div class = "independent-link rev-link">
+
+              </div>
+    <div class= "independent-rev">
+    <p class = "smaller-text">‘Rarely less than entertaining, and that’s some achievement’
+
+ <p>
+    </div>
+    
+    
+ 
+
+              </div>
+    
+    <div class = "clear_floats"></div>
+
+<div class = "observer_holder review-holder left_holder">
+    
+    
+     <div class = "observer-link rev-link">
+
+              </div>
+    <div class= "observer-rev">
+    <p class = "smaller-text">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons’ 
+ <p>
+    </div>
+    
+ 
+
+              </div>
+    
+    <div class = "daily_holder review-holder right_holder">
+    <div class= "daily-rev">
+    <p class = "smaller-text">'Mildmay tells a good story ...’
+ <p>
+    </div>
+    
+     <div class = "daily-link rev-link">
+
+              </div>
+ 
+
+              </div>
+    
+      <div class = "clear_floats"></div>
+
+<div class = "daily_holder review-holder right_holder">
+    <div class= "i-d-rev">
+    <p class = "smaller-text">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’
+
+ <p>
+    </div>
+    
+     <div class = "i-d-link rev-link">
+
+              </div>
+ 
+
+              </div>
+    
+    <div class = "daily_holder review-holder left_holder">
+    <div class= "times-rev">
+    <p class = "smaller-text">‘Her flights of fancy description transform cynicism into lyricism’
+
+ <p>
+    </div>
+    
+     <div class = "times-link rev-link">
+
+              </div>
+ 
+
+              </div>
+
+ 
+
+
+
+          
+
+          <p class="news__txt">
+      
+             
+          </p>
+    
+    </div>
+
+    
+</div>
+
+{% endblock %}
+
+{% block slide_2_block %}
+<div class = "opac-div" id = "slide_2_hold">
+
+
+      <div class="slider_titlo">
+            <span class="slider_titlo_text"><h1>About</h1></span>
+           
+          </div>
+         
+     
+
+          <p class="news__txt">
+            
+        Eroica was born in London and grew up in Africa, specifically Cameroon, Libya and Senegal and has travelled extensively out from those countries to other parts of Africa too. At certain points in her life she has needed to speak Pigeon English, (Cameroon) Arabic and Italian (Libya) and Wolof and French (Senegal) just to make friends! However only French has remained in her system as a regularly used language. Her enthusiasm for travelling and other cultures has taken her to many other world destinations throughout her adult life since then as well. <br><br>
+
+Returning from living in Africa to the UK in her teens, she attended Cheltenham Art College, specializing in sculpture. She then became a model after being spotted in the street in Berkley Square, going on to work in London, Paris, Milan, Hamburg and Munich on the catwalk and on press photoshoots. She has lived full-time in both Milan and Paris during this period. She then had her own fashion styling business based in London with an extensive client base, also both at home and abroad. She moved over to writing after that, attending the University of East Anglia as a mature student, completing a BA Hons Degree in Creative Writing and English Literature to improve her craft. 
+              
+         
+
+          </p>
+
+         
+
+</div>
+{% endblock %}
+
+
+{% block slide_8_block %}
+
+<div class="slider_titlo">
+            <span class="slider_titlo_text"><h1>Contact</h1></span>
+           
+          </div>
+
+
+
+
+<p class="news__txt"> Feel free to contact me!
+    
+    <i class="fas fa-envelope"></i> eroica@eroicamildmay.com <br>
+    <i class="fas fa-telephone"></i> 07876 404454 <br> <br>
+    Alternatively, contact me using the tool below:
+</p>
+
+
+   
+    <button class = "btn btn-primary con-butty">Use The Quick Contact Tool</button>
+    
+ 
+    
+{% endblock %}
+
+
+
+
+
+
+
+
