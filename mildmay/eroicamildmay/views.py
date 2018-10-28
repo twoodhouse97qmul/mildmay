@@ -61,7 +61,7 @@ def oldhome(request):
     context = {
 
     }
-    return render(request, 'opening_old/tele-skirting.html', context)
+    return render(request, 'opening_old/telep.html', context)
 
 def twPast(request):
     context = {

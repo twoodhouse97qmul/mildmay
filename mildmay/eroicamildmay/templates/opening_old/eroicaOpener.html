@@ -69,18 +69,20 @@
     .tele-slider-block-hold{
        
         position:relative;
-       
-        height:100px;
-        width:110%;
+        background-color: #d2dfcc;
+        height:200px;
+        width:50%;
         overflow: hidden;
-        margin-left:-30px;
+        margin-left:25%;
+        border-radius:8px;
+        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
         
     }
     
   
 
     .gaurdian-link{
-        background-image:url("{% static 'photos/gaurdian.png' %}");
+        background-image:url("{% static 'photos/diag.png' %}");
         background-size: cover;
         
        
@@ -174,7 +176,7 @@
     .sunday-link{
         height:22px;
         width:115px;
-        background-image:url("{% static 'photos/sunday_times.png' %}");
+        background-image:url("{% static 'old-photos/sunday_times.png' %}");
         background-size: cover;
         float:left;
         margin-left:15px;
@@ -184,7 +186,7 @@
     .observer-link{
         height:30px;
         width:30px;
-        background-image:url("{% static 'photos/gaurdian.png' %}");
+        background-image:url("{% static 'old-photos/gaurdian.png' %}");
         background-size: cover;
         float:left;
          margin-left:15px;
@@ -196,7 +198,7 @@
      .daily-link{
         height:30px;
         width:30px;
-        background-image:url("{% static 'photos/daily_mail.png' %}");
+        background-image:url("{% static 'old-photos/daily_mail.png' %}");
         background-size: cover;
         float:left;
           margin-left:15px;
@@ -208,7 +210,7 @@
     .i-d-link{
         height:20px;
         width:32px;
-        background-image:url("{% static 'photos/ID.png' %}");
+        background-image:url("{% static 'old-photos/ID.png' %}");
         background-size: cover;
         float:left;
          margin-left:15px;
@@ -222,7 +224,7 @@
       .times-link{
         height:30px;
         width:30px;
-        background-image:url("{% static 'photos/times.png' %}");
+        background-image:url("{% static 'old-photos/times.png' %}");
         background-size: cover;
         float:left;
            margin-left:15px;
@@ -233,7 +235,7 @@
     
      .independent-link{
       
-        background-image:url("{% static 'photos/independent.png' %}");
+        background-image:url("{% static 'old-photos/independent.png' %}");
         background-size: cover;
         margin:0 auto;
         height:30px;
@@ -325,7 +327,7 @@
             <span class="slider_titlo_text" ><h1>Eroica st John Mildmay
 </h1></span>
       <div class = "tele-slider-block-hold">
-      {% block tele-sliderr %}
+      {% block tele-test %}
       {% endblock %}
           </div>
       
