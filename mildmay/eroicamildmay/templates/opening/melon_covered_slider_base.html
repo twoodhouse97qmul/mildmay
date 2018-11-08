@@ -14,7 +14,7 @@
 <style>
     
      .wrapper{
-        margin-top:15px;
+        margin-top:8px;
         position:fixed;
          width:100%;
          height:100%;
@@ -136,9 +136,10 @@
     }
     
     .item-bg{
-        max-height: 605px;
-        min-height:600px;
+        max-height: 570px;
+        min-height:555px;
         overflow: hidden;
+        max-width:955px;
     }
     
     .mildmay-contact-hold-front{
@@ -197,17 +198,17 @@
     }
     
     .freelance_slide{
-        max-width:1090px;
+        max-width:955px;
     }
     
     
     .contact-slide{
-        max-width:1050px;
+        max-width:955px;
         margin:0 auto;
     }
     
     .about-slide{
-        max-width:1050px;
+        max-width:955px;
         
     }
     
@@ -217,6 +218,10 @@
         right:0;
         margin-right:10px;
         z-index:99999999999999999999;
+    }
+    
+    .background-slide{
+        max-width:955px;
     }
     
     
@@ -296,15 +301,7 @@
         
         
          
-      
-      <div class="news-slider__item swiper-slide first_slidy front-slide">
-        <div class="news__item no_underline" id = "abcdff">
-          {% block slide_2_block %}
-            {% endblock %}
-
-        </div>
-      </div>
-        
+     
           
     
         
@@ -326,19 +323,32 @@
          
         </a>
       </div>
+        
+     
+        
 
-      <div class="news-slider__item swiper-slide">
+      <div class="news-slider__item swiper-slide background-slide">
        
 <a href="#" class="news__item no_underline">
         {% block slide_3_block %}
 {% endblock %}
         </a>
       </div>
+        
+        
+            
+      <div class="news-slider__item swiper-slide first_slidy front-slide">
+        <div class="news__item no_underline" id = "abcdff">
+          {% block slide_2_block %}
+            {% endblock %}
+
+        </div>
+      </div>
 
   
 
       <div class="news-slider__item swiper-slide freelance_slide" id = "hoper">
-        <a href="#" class="news__item no_underline" id = "contact-item">
+        <a href="#" class="news__item no_underline">
         {% block slide_4_block %}
 {% endblock %}
         </a>

@@ -556,8 +556,6 @@
     
     
     .eroica-photo{
-       
-        
         box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
          border-radius:8px;
         background-image:url("{% static 'photos/eroica.jpg' %}");
@@ -565,8 +563,8 @@
         background-repeat: no-repeat;
          margin-top:20px;
         float:left;
-        width:351px;
-        height:450px;
+        width:320px;
+        height:410px;
         margin-bottom:10px;
         
         
@@ -762,13 +760,12 @@
     .telegraph-back{
         background-image:url("{% static 'photos/tel2.jpg' %}");
         z-index:9999999999999999;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        position:relative;
-        height:200px;
-        width:220px;
-     
-        margin-top:-20px;
+        position:fixed;
+        height:20px;
+        width:150px;
+        
     }
     
     .observer-link{
@@ -970,7 +967,10 @@
     .custom_news{
         width:60%;
         float:right;
-        padding-top:5px;
+        margin-top:-5px;
+        padding-top:3px;
+        margin-right;-5px;
+        font-size:83%;
     }
     
     .press-title-holder{
@@ -1114,11 +1114,10 @@ height:300px;
         display: block;
   margin: 0 auto;
   width: 80%;
-
   border: 1px solid rgba(0,0,0,.2);
   height: 45px;
   line-height: 45px;  
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 1em;
   color: black;
  
@@ -1268,9 +1267,18 @@ height:300px;
         font-weight: 400;
     }
     
+    .cont-held{
+        width:880px;
+    }
+    
+    .about-titlo{
+        position:relative;
+        margin-top:-40px;
+        text-align: center;
+    }
     
     
-    
+   
    
    
     
@@ -1312,47 +1320,6 @@ height:300px;
 </div>
 
 {% endblock %}
-{% block slide_2_block %}
-
-
-<div class = "opac-div sslide_1_hold" id = "slide_1_hold">
-
-  <div class="slider_titlob">
-            <span class="slider_titlo_text" ><h1>eroica mildmay
-</h1></span>
-      <div class = "tele-slider-block-hold">
-        {% block new-feature %}
-        {% endblock %}
-          </div>
-      
-   
-           
-          </div>
-    
-    <div class = "press-title-holder">
-      
-            </div>
-        <div class = "press-text">
-            <b>
-    <h1 class = "americano">press reviews</h1>
-           </b> </div>
-         <div class = "clear_floats"></div>
-   
-
-
-<div class = "review-div">
-
-{% block review-block %}
-    {% endblock %}
-
-
-    
-    </div>
-
-    
-</div>
-
-{% endblock %}
 
 
 
@@ -1360,9 +1327,8 @@ height:300px;
 <div class = "opac-div" id = "slide_2_hold">
 
 
-      <div class="slider_titlo">
-            <span class="slider_titlo_text"><h1>about</h1></span>
-           
+      <div class="slider_titlo about-titlo">
+            <span class="slider_titlo_text "><h1>about</h1></span>
           </div>
          
      
@@ -1398,11 +1364,11 @@ Eroica moved over to writing after that, and in due course attended the Universi
 <div class = "opac-div" id = "slide_2_hold">
 
 
-      <div class="slider_titlo">
+      <div class="slider_titlo about-titlo">
             <span class="slider_titlo_text"><h1>background</h1></span>
            
           </div>
-         
+         <div class = "cont-held">
             
             <h3 class = "americano">columnist</h3>
 
@@ -1440,7 +1406,7 @@ Eroica moved over to writing after that, and in due course attended the Universi
 
     
               
-         
+         </div>
 
         
 
@@ -1449,15 +1415,56 @@ Eroica moved over to writing after that, and in due course attended the Universi
 </div>
 {% endblock %}
 
+{% block slide_2_block %}
+
+
+<div class = "opac-div sslide_1_hold" id = "slide_1_hold">
+
+  <div class="slider_titlob">
+           
+      <div class = "tele-slider-block-hold">
+        {% block new-feature %}
+        {% endblock %}
+          </div>
+      
+   
+           
+          </div>
+    
+    <div class = "press-title-holder">
+      
+            </div>
+        <div class = "press-text">
+            <b>
+    <h1 class = "americano">press reviews</h1>
+           </b> </div>
+         <div class = "clear_floats"></div>
+   
+
+
+<div class = "review-div">
+
+{% block review-block %}
+    {% endblock %}
+
+
+    
+    </div>
+
+    
+</div>
+
+{% endblock %}
+
 {% block slide_4_block %}
-<div class = "opac-div" id = "slide_2_hold">
+<div class = "opac-div flc-divv">
 
 
-      <div class="slider_titlo">
+      <div class="slider_titlo about-titlo">
             <span class="slider_titlo_text"><h1>freelance copywriter</h1></span>
            
           </div>
-         
+         <div class = "all-cw-text">
      
 
           <p class="news__txt justy slightly-small">
@@ -1483,8 +1490,7 @@ basic of briefs.
           
           Bang-up-to-date cutting-edge copy? Or perhaps a more traditional and classic style of prose is required? Or crisp formality, known formulas, brochure speak, instruction manuals, general blurb or perhaps even some historical context? Need some plain-speaking no-frills everyday copy? Or, a poetic approach perhaps, and by the way, poetical structuring comes easily to her. A regular blog maybe? Website content to go? Film scripts, or ghostwriting? Or, if needed, a comedic twist, as Eroica is in possession of a sharp and perceptive wit . . . So, if original thinking, one-off inventiveness, character-driven ideas or gentle humorous asides are required, it’s all very achievable. <br><br>
 Over to you . . .
-          
-<br><br>
+
     </p>
     
     <h3 class = "americano">can do this!</h3>
@@ -1496,6 +1502,8 @@ Responsive and communicative – and with communication always being the absolut
 Eroica’s work is always highly-finished and delivered in a timely fashion, as required. The challenge is the fun part and the satisfaction comes in doing an outstanding job to a very high standard.
 
           </p>
+             
+             </div>
 
          
 
@@ -1508,7 +1516,7 @@ Eroica’s work is always highly-finished and delivered in a timely fashion, as 
 {% block slide_5_block %}
 <div class = "contact-remove-slide">
 
-<div class="slider_titlo">
+<div class="slider_titlo about-titlo">
             <span class="slider_titlo_text"><h2>interested in working together? hurrah!</h2></span>
            
  </div>
@@ -1555,13 +1563,13 @@ UK-based and international clients welcome.
  
          <div class = "penis_test" id = "p-test">
              <label>Name:</label>
-         <input id = "contact-name" name="con-name-new" class = "con-in left-contact" type='text' placeholder='Enter your name ...'  />
+         <input id = "contact-name" name="con-name-new" class = "con-in left-contact" type='text' placeholder=''  />
              </div>
           <label>Your Contact Details:</label>
-       <input id = "email-in" class = "con-in right-contact" type='text' placeholder='Enter your Phone or Email ...'  />
+       <input id = "email-in" class = "con-in right-contact" type='text' placeholder=''  />
        <div class = "cleario">  </div>
           <label>Write Your Message Here:</label>
-        <textarea id = "message-in"  class = "con-in con-text-field right-contact-m" placeholder = "Enter your message ..."></textarea>
+        <textarea id = "message-in"  class = "con-in con-text-field right-contact-m" placeholder = ""></textarea>
         <button class = "btn btn-primary" id = "mildmay-submit-but" onclick = 'sendMessage();'>Send Message</button>
             
         </div>
