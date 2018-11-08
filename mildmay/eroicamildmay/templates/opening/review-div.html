@@ -1,24 +1,19 @@
-{% extends 'opening/eroicaOpener.html' %}
+{% extends 'opening/eroicahome.html' %}
 {% block review-block %}
 
 
 <style>
     
      .rev-holder{
-        width: 40%;
-        padding:8px;
+        width: 100%;
+        padding:0px;
         color:black;
-        border:0;
-        border-style:solid;
-        border-width:2px;
-        border-bottom:0;
-        border-left:0;
-        border-right:0;
         padding-bottom:0;
         margin-bottom:0;
         margin-top:0;
         min-width:325px;
-        height:65px;
+       
+
     }
     
     .in-line-reviews{
@@ -40,9 +35,10 @@
   
     
     .review-text-holder{
-         float:right;
-        width: 75%;
-        text-align:center;
+     
+        height:60px;
+        width:60%;
+       
     }
     
     .sunday-funday{
@@ -68,19 +64,23 @@
   
     
     .review-text-holder-s{
-         float:right;
-        width: 70%;
-        text-align:center;
+         
+      
+        
     }
     
     .review-text-holder-ss{
-         float:right;
-        width: 65%;
-        text-align:center;
+         
+   
+        
     }
     
-    .pub-sign{
+    .pub-sign-r{
         text-align:right;
+       
+    }
+    .pub-sign-l{
+        text-align:left;
        
     }
     
@@ -88,6 +88,43 @@
     .justy{
         text-align: justify;
     }
+    
+    
+    .range-right{
+        text-align: right;
+    }
+    
+    .range-left{
+        text-align: left;
+    }
+    
+    .all-left-holders{
+        float:left;
+        width:50%;
+       
+    }
+    
+    
+    .all-right-holders{
+         float:right;
+        width:50%;
+        
+    }
+    
+        
+          .right_holder{
+        float:right; 
+       
+             
+              
+       
+    }
+    
+          .left_holder{
+        float:left;
+        
+    }
+    
     
    
     
@@ -159,16 +196,7 @@
          width: 250px;
         border-width: 0;
     }
-         
-          .right_holder{
-        float:none;
-        margin: 0 auto;
-    }
-    
-          .left_holder{
-        float:none;
-        margin: 0 auto;
-    }
+     
     
         
         
@@ -181,43 +209,16 @@
 </style>
 
 <div class = "wider-reviews">
-<div class = "rev-holder left_holder no_border">
-    
-    <div class = "observer-link review-link-holder bordered-observer"></div>
-    <div class = "review-text-holder">
-    
-       <p class = "smaller-text justy">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’ </p><p class = "smaller-text pub-sign ob-sign"><b>The Observer</b></p>  
-    
-    </div>
     
     
-
-
-</div>
+    <div class = "all-left-holders">
     
-<div class = "rev-holder right_holder no_border">
-    
-    <div class = "i-d-link review-link-holder"></div>
-    <div class = "review-text-holder-s">
-    
-         <p class = "smaller-text justy">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’ </p><p class = "smaller-text pub-sign"><b>ID Magazine</b></p>  
-    
-    </div>
+    <div class = "rev-holder  no_border">
     
    
-
-
-</div>
-
-<div class = "cleario"></div>
-
-<div class = "rev-holder left_holder">
+    <div class = "review-text-holder right_holder">
     
-    
-     <div class = "daily-link review-link-holder"></div>
-    <div class = "review-text-holder">
-    
-        <p class = "smaller-text justy">'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign daily-sign"><b>The Daily Mail</b></p>  
+       <p class = "smaller-text  range-right">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’ </p><p class = " news__txt smaller-text pub-sign-r bottom-dign"><b>The Observer</b></p>  
     
     </div>
     
@@ -225,33 +226,18 @@
 
 
 </div>
-    
+        
 
-<div class = "rev-holder right_holder">
-    
-    
-     <div class = "tls-link review-link-holder"></div>
-    <div class = "review-text-holder">
-    
-         <p class = "smaller-text justy">‘Her flights of fancy description transform cynicism into lyricism . . .’ </p><p class = "smaller-text pub-sign"><b>The Times Literary Supplement</b></p>  
-
-    
-    </div>
-    
-  
-
-
-</div>
-
+        
+        
 <div class = "cleario"></div>
 
-<div class = "rev-holder left_holder">
+<div class = "rev-holder">
     
-     <div class = "review-link-holder">
-         <h5 class = "times-font sunday-funday"><b>The <br>Sunday Times</b></h5></div>
-    <div class = "review-text-holder-s">
+     
+    <div class = "review-text-holder right_holder">
     
-        <p class = "smaller-text justy">A more unlikely outlaw than the discreet <br>Ms Mildmay would be hard to imagine . . .’</p><p class = "news__txt smaller-text pub-sign bottom-dign"><b>The Sunday Times</b></p> 
+        <p class = "smaller-text range-right">A more unlikely outlaw than the discreet <br>Ms Mildmay would be hard to imagine . . .’</p><p class = "news__txt smaller-text pub-sign-r bottom-dign"><b>The Sunday Times</b></p> 
     
     </div>
     
@@ -259,20 +245,104 @@
 
 
 </div>
+        
+        
+                
+<div class = "cleario"></div>
 
-<div class = "rev-holder right_holder">
+<div class = "rev-holder">
+    
+ 
+    <div class = "review-text-holder right_holder">
+    
+         <p class = "smaller-text range-right">‘Rarely less than entertaining, and that’s some achievement . . .’ </p><p class = "news__txt smaller-text pub-sign-r bottom-dign"><b>The Independent</b></p>    
+         
+    
+    </div>
+    
+    
+
+
+</div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class = "all-right-holders">
+        
+        <div class = "rev-holder  no_border">
+    
+
+    <div class = "review-text-holder left_holder">
+        
+        <p class = "smaller-text range-left">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’ </p><p class = "news__txt smaller-text pub-sign-l bottom-dign"><b>ID Magazine</b></p>    
+    
+        
+    
+    </div>
     
    
-   <div class = "independent-link review-link-holder"></div>
-    <div class = "review-text-holder-s">
+
+
+</div>
+        
+        
+        <div class = "cleario"></div>
+        
+        <div class = "rev-holder">
     
-         <p class = "smaller-text justy">‘Rarely less than entertaining, and that’s some achievement ...’ </p><p class = "news__txt smaller-text pub-sign bottom-dign"><b>The Independent</b></p>    
+    
+ 
+    <div class = "review-text-holder left_holder">
+        
+          <p class = "smaller-text range-left">‘Her flights of fancy description transform cynicism into lyricism . . .’ </p><p class = "news__txt smaller-text pub-sign-l bottom-dign"><b>The Times Literary Supplement</b></p>   
+      
+    
+    </div>
+    
+  
+
+
+</div>
+        
+        
+        <div class = "cleario"></div>
+
+
+<div class = "rev-holder">
+    
+   
+  
+    <div class = "review-text-holder-s left_holder">
+         
+          <p class = "smaller-text range-left">'Mildmay tells a good story . . .’ </p><p class = "news__txt smaller-text pub-sign-l bottom-dign"><b>The Daily Mail</b></p>   
+      
+    
+        
+    
     
     </div>
 
 </div>
+        
+        
+    </div>
+
     
-        <div class = "cleario"></div>
+
+
+    
+
+
+    
     
 </div>
 
@@ -294,7 +364,6 @@
 
     <div class = "rev-holder left_holder no_border">
     
-    <div class = "observer-link review-link-holder bordered-observer"></div>
     <div class = "review-text-holder">
     
        <p class = "smaller-text justy">‘Eroica Mildmay blazes in with Dayglo energy and a witty, angry prose as sharp as lemons . . .’ </p><p class = "smaller-text pub-sign ob-sign"><b>The Observer</b></p>  
@@ -310,7 +379,7 @@
 
 <div class = "rev-holder left_holder no_border">
     
-    <div class = "i-d-link review-link-holder"></div>
+   
     <div class = "review-text-holder-s">
     
          <p class = "smaller-text justy">‘Combines wit, nerve and languid poise in a way almost reminiscent of Martin Amis . . .’ </p><p class = "smaller-text pub-sign"><b>ID Magazine</b></p>  
@@ -327,7 +396,7 @@
 <div class = "rev-holder left_holder">
     
     
-     <div class = "daily-link review-link-holder"></div>
+   
     <div class = "review-text-holder">
     
         <p class = "smaller-text justy">'Mildmay tells a good story ...’ </p><p class = "smaller-text pub-sign daily-sign"><b>The Daily Mail</b></p>  
@@ -344,7 +413,7 @@
 <div class = "rev-holder left_holder">
     
     
-     <div class = "tls-link review-link-holder"></div>
+
     <div class = "review-text-holder">
     
          <p class = "smaller-text justy">‘Her flights of fancy description transform cynicism into lyricism . . .’ </p><p class = "smaller-text pub-sign"><b>The Times Literary Supplement</b></p>  
@@ -361,11 +430,10 @@
 
 <div class = "rev-holder left_holder">
     
-     <div class = "review-link-holder">
-         <h5 class = "times-font sunday-funday"><b>The Sunday Times</b></h5></div>
+   
     <div class = "review-text-holder-s">
     
-        <p class = "smaller-text justy">A more unlikely outlaw than the discreet <br>Ms Mildmay would be hard to imagine . . .’</p><p class = "smaller-text pub-sign"><b>The Sunday Times</b></p> 
+        <p class = "smaller-text justy">A more unlikely outlaw than the discreet Ms Mildmay would be hard to imagine . . .’</p><p class = "smaller-text pub-sign"><b>The Sunday Times</b></p> 
     
     </div>
     
@@ -379,7 +447,7 @@
 <div class = "rev-holder left_holder">
     
    
-   <div class = "independent-link review-link-holder"></div>
+   
     <div class = "review-text-holder-s">
     
          <p class = "smaller-text justy">‘Rarely less than entertaining, and that’s some achievement ...’ </p><p class = "smaller-text pub-sign"><b>The Independent</b></p>    

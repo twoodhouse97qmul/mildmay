@@ -1,12 +1,12 @@
-{% extends 'opening/new-feature-s.html' %}
+{% extends 'opening/new-skirt.html' %}
 
-{% block new-feature-b %}
+{% block new-feature %}
 
  {% load static %}
 
 <style>
     
-   .containerefeatb {
+   .containerefeat {
     overflow: hidden;
     
 
@@ -18,35 +18,34 @@
 }
 
 
-.sliding-backgroundfeatb {
+.sliding-backgroundfeat {
   background: url("{% static 'photos/tele-feature.png' %}") repeat-x;
   background-size: cover;
   height: 130%;
   width: 130%;
-  animation: slidebb 20s linear infinite;
+  animation: slide 20s linear infinite;
   animation-direction: alternate;
-  border-radius:15px;
+     border-radius:15px;
 }
 
   
     
-@keyframes slidebb{
+@keyframes slide{
   0%{
     transform: translate(0px, 0px);
   }
     
 15%{
  
-    transform: translate(-75px, -22px);
+    transform: translate(-50px, -15px);
    
   }
    
  
   100%{
-        width:200%;
-    height:200%;
-     transform: translate(-450px, -150px);
-   
+     transform: translate(-325px, -63px);
+     width:205%;
+    height:205%;
    
     
   }
@@ -57,7 +56,7 @@
     
     
 @media only screen and (max-width: 760px) {
-    @keyframes slidebb{
+    @keyframes slide{
   0%{
     transform: translate(0px, 0px);
   }
@@ -83,8 +82,8 @@
 
 
 
-<div class="containerefeatb">
-  <div class="sliding-backgroundfeatb"></div>
+<div class="containerefeat">
+  <div class="sliding-backgroundfeat"></div>
 </div>
 
 

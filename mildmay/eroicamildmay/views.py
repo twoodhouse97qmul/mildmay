@@ -45,6 +45,7 @@ def col_change(request):
     return render(request, 'opening/telep.html', context)
 
 def twhome(request):
+    print('thisone')
     context = {
 
     }
