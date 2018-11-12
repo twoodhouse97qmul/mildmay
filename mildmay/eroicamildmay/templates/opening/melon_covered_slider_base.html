@@ -181,7 +181,12 @@
         z-index:999999999999999999999999999;
     }
     
-   
+
+    
+    .revvy-slide{
+        overflow-y: hidden;
+    }
+    
  
     
     
@@ -224,6 +229,7 @@
         max-width:955px;
     }
     
+   
     
     
     
@@ -291,7 +297,7 @@
         
         
               
-      <div class="news-slider__item swiper-slide first_slidy front-slide">
+      <div class="news-slider__item swiper-slide first_slidy front-slide revvy-slide">
         <div class="news__item no_underline">
           {% block slide_jn_block %}
             {% endblock %}
@@ -316,7 +322,7 @@
         
     
 
-      <div class="news-slider__item swiper-slide about-slide">
+      <div class="news-slider__item swiper-slide about-slide revvy-slide">
         <a href="#" class="news__item no_underline">
            {% block slide_6_block %}
 {% endblock %}
@@ -327,7 +333,7 @@
      
         
 
-      <div class="news-slider__item swiper-slide background-slide">
+      <div class="news-slider__item swiper-slide background-slide revvy-slide">
        
 <a href="#" class="news__item no_underline">
         {% block slide_3_block %}
@@ -337,7 +343,7 @@
         
         
             
-      <div class="news-slider__item swiper-slide first_slidy front-slide">
+      <div class="news-slider__item swiper-slide first_slidy front-slide revvy-slide revvy-slide">
         <div class="news__item no_underline" id = "abcdff">
           {% block slide_2_block %}
             {% endblock %}
@@ -347,7 +353,7 @@
 
   
 
-      <div class="news-slider__item swiper-slide freelance_slide" id = "hoper">
+      <div class="news-slider__item swiper-slide freelance_slide revvy-slide" id = "hoper">
         <a href="#" class="news__item no_underline">
         {% block slide_4_block %}
 {% endblock %}
@@ -356,7 +362,7 @@
     
 
 
-      <div class="news-slider__item swiper-slide" >
+      <div class="news-slider__item swiper-slide revvy-slide" >
         <span href="#" class="news__item no_underline contact-slide" >
               {% block slide_5_block %}
 {% endblock %}

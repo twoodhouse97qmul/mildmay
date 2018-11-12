@@ -758,7 +758,7 @@
     }
     
     .telegraph-back{
-        background-image:url("{% static 'photos/tel2.jpg' %}");
+        background-image:url("{% static 'photos/telegraph2.jpg' %}");
         z-index:9999999999999999;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1143,6 +1143,11 @@ height:300px;
     
     
     @media only screen and (max-width: 560px) {
+        .rev-slidd{
+       overflow-y: scroll;
+       padding-top:25px;
+        
+    }
         
         
     .custom_news{
@@ -1155,14 +1160,7 @@ height:300px;
     
     .tele-slider-block-hold{
        
-        position:relative;
-        background-color: #d2dfcc;
-        height:175px;
-        width:300px;
-        overflow: hidden;
-        margin: 0 auto;
-        border-radius:15px;
-        box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+        display:none;
         
     }
         
@@ -1261,15 +1259,20 @@ height:300px;
         
     }
     
+    .itall{
+        font-style: italic;
+    }
+    
     .weds{
         width:600px;
         margin:0 auto;
         text-align:center;
+        margin-top:30px;
     }
     
     
     .flcw{
-        font-weight: 600;
+        font-weight: 400;
     }
     
     .loc{
@@ -1293,6 +1296,12 @@ height:300px;
         color: #2A2A72;
     }
     
+    .mar-20{
+        margin-top:15px;
+    }
+    
+    
+    
     
    
    
@@ -1303,7 +1312,7 @@ height:300px;
 
 
 
-<div class = "opac-div sslide_1_hold" id = "slide_1_hold">
+<div class = "opac-div sslide_1_hold rev-slidd" id = "slide_1_hold">
 
   <div class="slider_titlob weds">
             <h1><span class="slider_titlo_text em-text" >EROICA MILDMAY
@@ -1340,7 +1349,7 @@ height:300px;
 
 
 {% block slide_6_block %}
-<div class = "opac-div" id = "slide_2_hold">
+<div class = "opac-div rev-slidd" id = "slide_2_hold">
 
 
       <div class="slider_titlo about-titlo">
@@ -1359,7 +1368,7 @@ various International Schools and at certain points in her life
 she has needed to speak Pidgin English, (Cameroon) Arabic
 and Italian (Libya) and Wolof and French (Senegal) just to
 make friends! She returned to the UK with a generic, but
-noticeable ‘African’ lilt, and there is such a thing! However,
+noticeable ‘African’ lilt, and there <span class = "itall">is</span> such a thing! However,
 only French has remained in her system into adulthood as a
 regularly used language. Her enthusiasm for travelling,
 adventure and other cultures has taken her to many other
@@ -1409,7 +1418,7 @@ forward.
 {% endblock %}
 
 {% block slide_3_block %}
-<div class = "opac-div" id = "slide_2_hold">
+<div class = "opac-div rev-slidd" id = "slide_2_hold">
 
 
       <div class="slider_titlo about-titlo">
@@ -1422,7 +1431,7 @@ forward.
 
           <p class="news__txt justy slightly-small">
               
-              Eroica Mildmay has had column for eighteen months for the <span class = "telegraph-back"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;called <b>Notes from a Norfolk Broad</b>, which
+              Eroica Mildmay has had column for eighteen months for the <span class = "telegraph-back"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class = "americano">.co.uk</b> called <b>Notes from a Norfolk Broad</b>, which
 was a humorously rumbustious and much-read countryside-
 based column with a dedicated readership both here in the
 UK and around the world.
@@ -1480,9 +1489,9 @@ beyond.
 {% block slide_2_block %}
 
 
-<div class = "opac-div sslide_1_hold" id = "slide_1_hold">
+<div class = "opac-div sslide_1_hold rev-slidd" id = "slide_1_hold">
 
-  <div class="slider_titlob">
+  <div class="slider_titlob mar-20">
            
       <div class = "tele-slider-block-hold">
         {% block new-feature %}
@@ -1519,7 +1528,7 @@ beyond.
 {% endblock %}
 
 {% block slide_4_block %}
-<div class = "opac-div flc-divv">
+<div class = "opac-div flc-divv rev-slidd">
 
 
       <div class="slider_titlo about-titlo">
@@ -1561,11 +1570,7 @@ frills everyday copy? Or, a poetic approach perhaps, and by
 the way, poetical structuring comes easily to Eroica.
 Ghostwriting . . . woohoooo, let’s go! A regular blog maybe?
 Social media input and output? Engaging website content to
-go? Film scripts, no problem? Or, if needed, a comedic twist
-(as Eroica is in possession of a sharp wit!) So, if original
-thinking, one-off inventiveness, character-driven ideas or
-gentle humorous asides are required, or whatever, it’s all
-very achievable!
+go? Film scripts? No problem! (Award-winning scriptwriting history here.) Or, if needed, a comedic twist (as Eroica is in possession of a sharp wit!) So, whatever you want – original thinking, one-off inventiveness, character-driven ideas, humorous asides or simple, straight-down-the-line copy, it’s all very achievable!
 
 
     </p>
@@ -1575,7 +1580,7 @@ very achievable!
       <p class="news__txt justy slightly-small">
           
           Responsive and communicative, and with communication
-always being the absolute key, Eroica is able to work from 
+always being <span class = "itall">the absolute key</span>, Eroica is able to work from 
 
 even the flimsiest of concepts and enhance and flesh out any
 core idea into startling and attention-grabbing copy to suit.
@@ -1603,7 +1608,7 @@ a very high standard.
 
 
 {% block slide_5_block %}
-<div class = "contact-remove-slide">
+<div class = "contact-remove-slide rev-slidd">
 
 <div class="slider_titlo about-titlo">
             <span class="slider_titlo_text"><h2>interested in working together? hurrah!</h2></span>
