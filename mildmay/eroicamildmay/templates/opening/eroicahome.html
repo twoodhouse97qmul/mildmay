@@ -1286,6 +1286,12 @@ height:300px;
         text-align: center;
     }
     
+    .loading-cont{
+       
+        margin-top:150px;
+        font-size:500%;
+    }
+    
     
    
    
@@ -1680,16 +1686,14 @@ UK-based and International clients welcome.
 
     
     function sendMessage(){
-        //
         
-        alert("message sent");
-        sendAJAX();
+        
+     
+        //sendAJAX();
+        setContactToLoading();
        
 
            
-             
-     
-        
     }
     
    
@@ -1708,7 +1712,33 @@ UK-based and International clients welcome.
               }
             };
          $.ajax(options);
+        
     }
+    
+    function setContactToLoading(){
+        
+         $(".enter-stuff").fadeOut();
+         timeee1 = setTimeout(function(){
+             $(".enter-stuff").html('<i class="fas fa-circle-notch fa-spin loading-cont"></i>');
+            $(".enter-stuff").fadein();
+        },500);
+         $(".enter-stuff").fadeIn();
+        
+        timeee = setTimeout(function(){
+            setContactToSent();
+        },1500);
+    }
+    
+     function setContactToSent(){
+           $(".enter-stuff").fadeOut();
+         timeee1 = setTimeout(function(){
+             $(".enter-stuff").html('<i class="fas fa-check-circle loading-cont"></i> <h1>Message Sent</h1>');
+            $(".enter-stuff").fadein();
+        },500);
+         $(".enter-stuff").fadeIn();
+        
+         
+     }
 
    
    
