@@ -92,8 +92,11 @@ def cont(request):
         print(emm)
         print(mess)
 
-        email_help = Eroica_SMTP();
-        email_help.send_mail(namm,emm,mess);
+        try:
+            email_help = Eroica_SMTP();
+            email_help.send_mail(namm,emm,mess);
+        except:
+            print('error E3');
 
 
         Message.objects.create(
