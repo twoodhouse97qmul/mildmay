@@ -65,6 +65,23 @@ a, a:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 576px) {
+  .item-bg {
+  width: 1200px;
+  max-height: 300px;
+  position: absolute;
+  top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: all .3s;
+  left: -30px;
+
+
+
+}
+}
+
 .holdactivito {
   left: 0;
   top: 0;
@@ -86,6 +103,7 @@ a, a:hover {
 @media screen and (max-width: 576px) {
   .news-slider {
     margin-top: 45px;
+      
   }
 }
 .news-slider__wrp {
@@ -246,9 +264,7 @@ a, a:hover {
     margin-right: 10px;
   }
     
-    .item-bg{
-        max-height:400px;
-    }
+    
 }
 .news-date__txt {
   font-size: 16px;

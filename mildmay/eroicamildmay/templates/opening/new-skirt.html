@@ -6,17 +6,7 @@
 
 <style>
     
-        
-        /* Smartphones ----------- */
-@media only screen and (max-width: 560px) {
-    .containered{
-        display:none;
-    }
-    
-    .sliding-background{
-        display:none;
-    }
-    }
+
     
   
 
@@ -50,6 +40,32 @@
     bottom:0;
  
 }
+    
+            
+        /* Smartphones ----------- */
+@media only screen and (max-width: 560px) {
+   
+    
+    .sliding-background{
+       background: url("{% static 'photos/tele2.png' %}") repeat-x;
+ background-size: contain;
+  height: 40px;
+  width: 7000px;
+  animation: slide2 200s linear infinite;
+    }
+    
+        
+ .containered {
+    overflow: hidden;
+    position:absolute;
+    width:100%;
+    bottom:0;
+     z-index:9999999999999999999999999999;
+ 
+}
+    
+    }
+    
 </style>
 
 

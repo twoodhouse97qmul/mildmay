@@ -9,7 +9,7 @@
 
  {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/eroicaSlider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/eroicaSliderd.css' %}">
 
 <style>
     
@@ -151,48 +151,7 @@
           
     
     
-        
-        /* Smartphones ----------- */
-@media only screen and (max-width: 560px) {
-    
-    
-    .copyright-tag{
-        display: none;
-    }
-  .news-slider__item { 
-      
-     
-      max-height:400px; 
-     overflow-y: scroll;
-    
-    }
-    
-    .news-slider__ctr{
-        display:none;
-    }
-  
-    
-    .main__arrows{
-        position:absolute;
-        top:0;
-        width:100%;
-        height:60px;
-        margin-top:-40px;
-        z-index:999999999999999999999999999;
-    }
-    
 
-    
-    .revvy-slide{
-        overflow-y: hidden;
-    }
-    
- 
-    
-    
-    
-    
-}
     
      .front-slide{
         max-width:955px;
@@ -228,6 +187,53 @@
     .background-slide{
         max-width:955px;
     }
+    
+            
+        /* Smartphones ----------- */
+@media only screen and (max-width: 576px) {
+    
+    
+    .copyright-tag{
+        display: none;
+    }
+  .news-slider__item { 
+      
+     
+      max-height:400px; 
+     overflow-y: scroll;
+    
+    }
+    
+    .news-slider__ctr{
+        display:none;
+    }
+  
+    
+    .mid-arrows{
+        position:relative;
+        bottom:50px;
+    }
+    
+
+    
+    .revvy-slide{
+        overflow-y: hidden;
+        
+    }
+    
+   .item-bg{
+        max-height: 400px;
+        min-height:400px;
+        overflow: hidden;
+        max-width:955px;
+    }
+    
+ 
+    
+    
+    
+    
+}
     
    
     
