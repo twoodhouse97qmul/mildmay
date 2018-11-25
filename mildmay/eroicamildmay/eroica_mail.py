@@ -8,17 +8,17 @@ import smtplib
 class Eroica_SMTP:
 
     try:
-        MY_ADDRESS = 'eroicamildmayredirector@outlook.com';
+        MY_ADDRESS = 'eroicamildmay@outlook.com';
         ER_INFO = 'twoodhouse97@gmail.com';
+        ER_INF = 'eroicamildmay@outlook.com'
         PASSWORD = 'wun-7hm-LXT-y25';
+        PASSWORDN = 'Vta-bkD-YGH-Ri9';
 
         eroica_server = smtplib.SMTP(host='smtp-mail.outlook.com', port=587)
         eroica_server.starttls();
-        eroica_server.login(MY_ADDRESS, PASSWORD);
+        eroica_server.login(MY_ADDRESS, PASSWORDN);
     except:
         print('error E1');
-
-
 
     def send_mail(self,origin_name,origin_email,message_body):
 
@@ -27,9 +27,9 @@ class Eroica_SMTP:
 
             # setup the parameters of the message
             msg['From']=self.MY_ADDRESS
-            msg['To']=self.ER_INFO
-            msg['Subject']="MESSAGE FROM "+origin_name;
-            mess_header = 'MESSAGE FROM: '+origin_name+' \n\n contact details: '+origin_email+'\n\n Message: \n\n';
+            msg['To']=self.ER_INF
+            msg['Subject']="Message From "+origin_name;
+            mess_header = 'Message From: '+origin_name+' \n\n contact details: '+origin_email+'\n\n Message: \n\n';
             message = mess_header + message_body;
 
             msg.attach(MIMEText(message, 'plain'))

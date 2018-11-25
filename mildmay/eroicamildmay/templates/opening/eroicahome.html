@@ -332,9 +332,11 @@
         z-index:9999999999999999;
         background-size: contain;
         background-repeat: no-repeat;
-        position:fixed;
+        position:absolute;
         height:20px;
         width:150px;
+        color:white;
+       
         
     }
     
@@ -1105,7 +1107,7 @@ forward.
 
           <p class="news__txt justy slightly-small">
               
-              Eroica Mildmay has had a column for eighteen months for the <span class = "telegraph-back"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class = "americano">.co.uk</b> called <b>Notes from a Norfolk Broad</b>, which
+              Eroica Mildmay has had a column for eighteen months for the <span class = "telegraph-back"></span><b class = "americano">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.co.uk</b> called <b>Notes from a Norfolk Broad</b>, which
 was a humorously rumbustious and widely-read countryside-
 based column with a dedicated readership both here in the
 UK and around the world.
@@ -1363,7 +1365,7 @@ UK-based and International clients welcome.
         
         
      
-        //sendAJAX();
+        sendAJAX();
         setContactToLoading();
        
 
@@ -1382,7 +1384,7 @@ UK-based and International clients welcome.
                   mess:$("#message-in").val()
               },
               success : function () {
-              alert('SUCCESS');
+              
               }
             };
          $.ajax(options);
