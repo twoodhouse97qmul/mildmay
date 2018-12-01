@@ -986,9 +986,8 @@ height:300px;
 </style>
 
 
-
-
-<div class = "opac-div sslide_1_hold rev-slidd" id = "slide_1_hold">
+<div class = "opac-div sslide_1_hold rev-slidd " id = "slide_1_hold">
+    <div class = "intial-gone">
 
   <div class="slider_titlob weds">
             <h1><span class="slider_titlo_text em-text" >EROICA MILDMAY
@@ -1012,6 +1011,44 @@ height:300px;
     
       
          <div class = "clear_floats"></div>
+    
+    </div>
+   
+      
+            
+            <div class = "contact-remove-slide rev-slidd cookies-slide">
+
+<div class="slider_titlo about-titlo">
+            <span class="slider_titlo_text"><h2>Cookies</h2></span>
+           
+ </div>
+    
+    
+
+<h5 style ="text-align: center; font-size: 120%; padding:100px;"><br><br>Please accept Cookies to proceed with this website.<br>
+‘Legal compliance, optimal performance, customized responses,
+more effective functionality, blah, blah, blah’ . . . but, in a nutshell,
+using this website means that you’re okay with Cookies!<br>
+However, you can change which Cookies are set at any time,
+or just find out more about them, by clicking on this <a href = "#">link</a>.<br><br>
+
+It’s as simple as that!<br><br><button class = " btn btn-primary cookies-remove">Okay . . . off we go!</button>
+</h5>
+                
+                
+                
+
+
+
+<div class = "cleario"></div>
+    
+</div>
+          
+
+       
+      
+
+
    
 
 
@@ -1019,6 +1056,12 @@ height:300px;
 
     
 </div>
+
+
+
+
+
+
 
 {% endblock %}
 
@@ -1277,6 +1320,9 @@ a very high standard<br>.
 
 
 
+
+
+
 {% block slide_5_block %}
 <div class = "contact-remove-slide rev-slidd">
 
@@ -1358,6 +1404,17 @@ UK-based and International clients welcome.
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
+    
+    $(".intial-gone").hide();
+    
+    $(".cookies-remove").on("click",function(){
+      
+        $(".cookies-slide").fadeOut();
+        timuuu = setTimeout(function(){
+             $(".intial-gone").fadeIn();
+        },700);
+       
+    });
     
 
     
