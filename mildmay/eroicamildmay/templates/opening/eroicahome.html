@@ -854,6 +854,9 @@ height:300px;
     
     .bluey-butt{
         background-color: #2A2A72;
+        
+        opacity:1;
+        border:none;
     }
     
     
@@ -983,6 +986,29 @@ height:300px;
         margin-top:10px;
     }
     
+    
+    .cookies-slide{
+        position:fixed;
+        background-color: black;
+        opacity: 0.93;
+        z-index:999999999999999999999999999999;
+        color:white;
+        width:800px;
+        margin-left:45px;
+        border-radius: 10px;
+        text-align:center;
+        height:330px;
+        margin-top:65px;
+        border-color:#2A2A72;
+        border-style:solid;
+        border-width:0px;
+        border-left-width: 10px;
+    }
+    
+    .biggy-big{
+        font-size:150%;
+    }
+    
    
    
    
@@ -991,52 +1017,24 @@ height:300px;
 
 
 <div class = "opac-div sslide_1_hold rev-slidd " id = "slide_1_hold">
-    <div class = "intial-gone">
-
-  <div class="slider_titlob weds">
-            <h1><span class="slider_titlo_text em-text" >EROICA MILDMAY
-</span> </h1>
-      <div class = "tele-slider-block-hold-b">
-        {% block new-feature-b %}
-        {% endblock %}
-          </div>
+    
+    
       
-   
+            <div class = "cookies-slide">
+
+
+           <h2>Cookies</h2>
            
-          </div>
-    
-    <span class="slider_titlo_text americano loc" id = "top-texxt"><h3>lines of communication
-              </h3></span>
-    
-    <div class = "press-text">
-            
-    <h1 class = "americano flcw">freelance copywriter</h1>
-           </div>
-    
-      
-         <div class = "clear_floats"></div>
-    
-    </div>
-   
-      
-            
-            <div class = "contact-remove-slide rev-slidd cookies-slide">
+<h5 style ="text-align: center; font-size: 120%; padding:100px; padding-top: 0;"><br>
+<span class = "biggy-big">Please accept Cookies to proceed with this site.</span><br><br>
+‘Legal compliance, optimal performance, customized responses,<br>
+more effective functionality’ blah, blah, blah . . .<br><br>
 
-<div class="slider_titlo about-titlo">
-            <span class="slider_titlo_text"><h2>Cookies</h2></span>
-           
- </div>
-    
-    
+Seriously though, you can change which Cookies are set at any time,
+or to find out more about them, just click on this <a href = "#">link</a>.<br><br>
+    <span class = "biggy-big">It’s a simple as that!<br><br></span>
 
-<h5 style ="text-align: center; font-size: 120%; padding:100px;"><br><br>Please accept Cookies to proceed with this website.<br>
-‘Legal compliance, optimal performance, customized responses,
-more effective functionality, blah, blah, blah’ . . . but, in a nutshell,
-using this website means that you’re okay with Cookies!<br>
-However, you can change which Cookies are set at any time,
-or just find out more about them, by clicking on this <a href = "#">link</a>.<br><br>
-
-It’s as simple as that!<br><br><button class = " btn btn-primary bluey-butt cookies-remove">Okay . . . off we go!</button>
+<button class = " btn btn-primary bluey-butt cookies-remove">Okay, got it!</button>
 </h5>
                 
                 
@@ -1050,6 +1048,36 @@ It’s as simple as that!<br><br><button class = " btn btn-primary bluey-butt co
           
 
        
+    
+    <div class = "intial-hidden">
+
+  <div class="slider_titlob weds">
+            <h1><span class="slider_titlo_text em-text" >EROICA MILDMAY
+</span> </h1>
+      <div class = "tele-slider-block-hold-b">
+        {% block new-feature-b %}
+        {% endblock %}
+          </div>
+      
+   
+           
+          </div>
+    
+    <span class="slider_titlo_text americano loc singlua" id = "top-texxt"><h3>lines of communication
+              </h3></span>
+    
+    <div class = "press-text">
+            
+    <h1 class = "americano flcw">freelance copywriter</h1>
+           </div>
+    
+      
+         <div class = "clear_floats"></div>
+    
+    </div>
+   
+      
+          
       
 
 
@@ -1112,15 +1140,13 @@ shoots. She lived full-time in both Milan and Paris during
 this period. Eroica then started up as a fashion stylist based
 in London, with an extensive client base both at home and
 abroad.<br><br>
-She moved over to writing after that, attending the
-University of East Anglia (UEA) as a mature student on the
-BA (Hons.) English Literature with Creative Writing Degree
-Course. The UEA is widely seen as ‘the home of creative
-writing’ due to its predominant role in pioneering this
-course in the UK back in the 1960’s. Eroica’s first novel had
-already published prior to attending the UEA, but it was
-nevertheless an invaluable clarifying experience going
-forward.
+She moved over to writing after that, attending the University of East
+Anglia (UEA) as a mature student on the BA (Hons.) English
+Literature with Creative Writing course. The UEA is widely seen as
+‘the home of creative writing’ due to its predominant role in
+pioneering the course. Eroica’s first novel had already been
+published prior to attending the UEA, but it was nevertheless an
+invaluable clarifying experience for her going forward.
               
               
               
@@ -1410,12 +1436,14 @@ UK-based and International clients welcome.
 <script>
     
     $(".intial-gone").hide();
+    $(".singlua").css("color","white");
     
     $(".cookies-remove").on("click",function(){
-      
+         $(".singlua").css("color","black");
         $(".cookies-slide").fadeOut();
         timuuu = setTimeout(function(){
              $(".intial-gone").fadeIn();
+            
         },700);
        
     });
