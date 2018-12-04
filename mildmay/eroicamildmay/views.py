@@ -19,9 +19,7 @@ from django.http import JsonResponse
 import json
 from django.views.decorators.csrf import csrf_exempt
 from django.http import Http404
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import smtplib
+from .eroica_mail import Eroica_SMTP;
 
 
 
@@ -47,35 +45,7 @@ def col_change(request):
     return render(request, 'opening/telep.html', context)
 
 def twhome(request):
-
-    context = {
-
-    }
-    return render(request, 'opening/new-feature.html', context)
-
-@csrf_exempt
-def justsentemail(request):
-
-    namm = request.POST['namm']
-    emm = request.POST['emm']
-    mess = request.POST['mess']
-    print(namm)
-    print(emm)
-    print(mess)
-
-    try:
-        email_help = Eroica_SMTP();
-        email_help.send_mail(namm,emm,mess);
-    except:
-        print('error E3');
-
-
-    Message.objects.create(
-    name = namm,
-    email = emm,
-    message = mess
-    )
-
+    print('thisone')
     context = {
 
     }
@@ -114,60 +84,23 @@ def twcontact(request):
 
 @csrf_exempt
 def cont(request):
-
-    MY_ADDRESS = 'eroicamildmay@outlook.com';
-    ER_INFO = 'twoodhouse97@gmail.com';
-    ER_INF = 'eroicamildmay@outlook.com'
-    PASSWORD = 'wun-7hm-LXT-z25';
-    PASSWORDN = 'Vta-bkD-YGH-Ri9';
-
-    try:
-
-
-        eroica_server = smtplib.SMTP(host='smtp-mail.outlook.com', port=587)
-        eroica_server.starttls();
-        eroica_server.login(MY_ADDRESS, PASSWORDN);
-    except:
-        print('error E1');
-
-
-
-
     if request.method == 'POST':
+        namm = request.POST['namm']
+        emm = request.POST['emm']
+        mess = request.POST['mess']
+        print(namm)
+        print(emm)
+        print(mess)
 
-        origin_name = request.POST['namm']
-        origin_email = request.POST['emm']
-        message_body = request.POST['mess']
-
+        email_help = Eroica_SMTP();
+        email_help.send_mail(namm,emm,mess);
 
 
         Message.objects.create(
-        name = origin_name,
-        email = origin_email,
-        message = message_body
+        name = namm,
+        email = emm,
+        message = mess
         )
-
-        try:
-
-            msg = MIMEMultipart()       # create a message
-
-            # setup the parameters of the message
-            msg['From']=MY_ADDRESS
-            msg['To']=ER_INF
-            msg['Subject']="Message From "+origin_name;
-            mess_header = 'Message From: '+origin_name+' \n\nContact details: '+origin_email+'\n\nMessage: \n\n';
-            message = mess_header + message_body;
-
-            msg.attach(MIMEText(message, 'plain'))
-            print(3);
-            # send the message via the server set up earlier.
-            eroica_server.send_message(msg)
-            print(4);
-            del msg
-
-            print('SENT THE MAIL.')
-        except:
-            print('error E2');
 
         return HttpResponse(status=200)
 
