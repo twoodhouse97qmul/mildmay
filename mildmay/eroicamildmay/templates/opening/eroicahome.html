@@ -1445,7 +1445,8 @@ UK-based and International Clients Welcome.
         
         
      
-        sendAJAX();
+        var ter = $("#message-in").val();
+        window.location.href = "mailto:eroica@outlook.com?subject=Website Refferal&body="+ter;
         setContactToLoading();
        
 
@@ -1464,7 +1465,8 @@ UK-based and International Clients Welcome.
                   mess:$("#message-in").val()
               },
               success : function () {
-                alert("server sending email...");
+                  
+                  
               }
             };
          $.ajax(options);
