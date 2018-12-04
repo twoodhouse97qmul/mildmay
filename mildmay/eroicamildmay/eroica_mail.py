@@ -11,7 +11,7 @@ class Eroica_SMTP:
         MY_ADDRESS = 'eroicamildmay@outlook.com';
         ER_INFO = 'twoodhouse97@gmail.com';
         ER_INF = 'eroicamildmay@outlook.com'
-        PASSWORD = 'wun-7hm-LXT-y25';
+        PASSWORD = 'wun-7hm-LXT-z25';
         PASSWORDN = 'Vta-bkD-YGH-Ri9';
 
         eroica_server = smtplib.SMTP(host='smtp-mail.outlook.com', port=587)
@@ -29,7 +29,7 @@ class Eroica_SMTP:
             msg['From']=self.MY_ADDRESS
             msg['To']=self.ER_INF
             msg['Subject']="Message From "+origin_name;
-            mess_header = 'Message From: '+origin_name+' \n\n contact details: '+origin_email+'\n\n Message: \n\n';
+            mess_header = 'Message From: '+origin_name+' \n\nContact details: '+origin_email+'\n\nMessage: \n\n';
             message = mess_header + message_body;
 
             msg.attach(MIMEText(message, 'plain'))
