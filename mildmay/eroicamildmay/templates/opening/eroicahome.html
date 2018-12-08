@@ -1037,7 +1037,7 @@ height:300px;
 
            <h2>Cookies</h2>
            
-<h5 style ="text-align: center; font-size: 120%; padding:50px; padding-top: 0;">
+<h5 style ="text-align: center; font-size: 120%; padding:50px; padding-top:0;">
 <span class = "biggy-big">Please accept Cookies to proceed with this site.</span><br><br>
     
 ‘Legal compliance, optimal performance, customized responses, more effective functionality’ blah, blah, blah . . .<br><br>
@@ -1466,7 +1466,8 @@ UK-based and International Clients Welcome.
         
      
         var ter = $("#message-in").val();
-        window.location.href = "mailto:eroicamildmay@outlook.com?subject=Website Refferal&body="+ter;
+        var ngh = $("#contact-name").val();
+        window.location.href = "mailto:eroicamildmay@outlook.com?subject='Enquiry From'"+ngh+"&body="+ter;
         setContactToLoading();
        
 
