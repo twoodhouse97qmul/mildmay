@@ -1476,8 +1476,13 @@ UK-based and International Clients Welcome.
     function sendMessage(){
         
         
-     
-        var ter = $("#message-in").val();
+       var ter = "";
+        ter = $("#message-in").val();
+        
+        if(ter.length < 1){
+           ter = $("#message-in").val();
+           }
+        alert(ter);
         var ngh = $("#contact-name").val();
         window.location.href = "mailto:eroicamildmay@outlook.com?subject=Enquiry From "+ngh+"&body="+ter;
         setContactToLoading();
